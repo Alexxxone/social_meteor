@@ -1,0 +1,27 @@
+.error-404 {
+    background: url('/img/earth.jpg') no-repeat 100% 100% #000000;
+    position: fixed;
+    text-align: center;
+    vertical-align: middle;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: table;
+    color: white;
+}
+.error-404 .error-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+body{
+    margin-top: 70px;
+}
+
+.each_friend_in_list {
+    min-height: 125px;
+    padding: 5px;
+    border:1px solid rgba(215, 244, 255, 0.52);
+    border-collapse:collapse;
+    vertical-align: middle;
+}
