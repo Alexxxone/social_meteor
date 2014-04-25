@@ -4,19 +4,19 @@ Meteor.publish("conversations", function() {
 
 
 Meteor.publish("people", function() {
-    return Meteor.users.find({});
+    return Meteor.users.find({ _id: { $ne: this.userId } });
 });
 
 
 
 
 Meteor.publish("friends", function() {
-    return Friends.find({sender: this.userId});
+    return Friends.find({members: this.userId});
 });
 Meteor.publish("my_invites", function() {
-    invites = Invites.find({sender: this.userId}).fetch();
-    my_invites = _.pluck(invites,'receiver');
-    return Meteor.users.find({_id: { $in: my_invites } })
+    invites = Invites.find({sender: this.userId});
+    my_invites = _.pluck(invites.fetch(),'receiver');
+    return [Meteor.users.find({_id: { $in: my_invites } }),invites];
 });
 
 

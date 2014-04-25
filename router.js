@@ -48,10 +48,14 @@ Router.map(function() {
                 return Meteor.users.find({});
             },
             my_invites: function(){
-                return Meteor.users.find({});
+                invites = Invites.find({sender: Meteor.userId() });
+                my_invites = _.pluck(invites.fetch(),'receiver');
+                return Meteor.users.find({_id: { $in: my_invites } });
             },
             invites: function(){
-                return Meteor.users.find({});
+                invites = Invites.find({receiver: Meteor.userId() });
+                my_invites = _.pluck(invites.fetch(),'sender');
+                return Meteor.users.find({_id: { $in: my_invites } });
             }
         }
     });
