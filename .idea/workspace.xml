@@ -26,7 +26,7 @@
       <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="0" selection-start="3046" selection-end="3046" vertical-scroll-proportion="0.88101983" vertical-offset="939" max-vertical-offset="2088">
+            <state line="19" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="0.32294616" vertical-offset="0" max-vertical-offset="2106">
               <folding />
             </state>
           </provider>
@@ -35,43 +35,43 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="1098">
+            <state line="29" column="79" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1152">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conversations.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/collections/conversations.js">
+      <file leaf-file-name="header.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/main/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="55" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="432">
+            <state line="9" column="16" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conversations.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.html">
+      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/main/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="270">
+            <state line="13" column="59" selection-start="777" selection-end="788" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="1674">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conversation.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/conversations/conversation.html">
+      <file leaf-file-name="friends.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/friends/friends.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="756">
+            <state line="26" column="45" selection-start="914" selection-end="914" vertical-scroll-proportion="-10.0" vertical-offset="198" max-vertical-offset="1674">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conversations.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.js">
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="37" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="360">
+            <state line="68" column="48" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="1962">
               <folding />
             </state>
           </provider>
@@ -79,24 +79,44 @@
       </file>
     </leaf>
   </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/client/views/people/people.js" />
         <option value="$PROJECT_DIR$/collections/invites.js" />
-        <option value="$PROJECT_DIR$/client/views/friends/friends.html" />
         <option value="$PROJECT_DIR$/server/collectionRules.js" />
         <option value="$PROJECT_DIR$/collections/friends.js" />
         <option value="$PROJECT_DIR$/client/views/main/left_menu.html" />
-        <option value="$PROJECT_DIR$/client/views/friends/friends.js" />
         <option value="$PROJECT_DIR$/collections/collections.js" />
         <option value="$PROJECT_DIR$/client/controllers/messages_controller.js" />
-        <option value="$PROJECT_DIR$/client/views/conversations/conversations.html" />
-        <option value="$PROJECT_DIR$/collections/chat.js" />
-        <option value="$PROJECT_DIR$/client/views/conversations/conversations.js" />
+        <option value="$PROJECT_DIR$/packages/user-status/status.coffee" />
+        <option value="$PROJECT_DIR$/client/views/people/people.html" />
+        <option value="$PROJECT_DIR$/client/views/home/home.js" />
+        <option value="$PROJECT_DIR$/client/views/home/home.html" />
+        <option value="$PROJECT_DIR$/server/methods.js" />
+        <option value="$PROJECT_DIR$/client/views/friends/friends.js" />
         <option value="$PROJECT_DIR$/collections/conversations.js" />
+        <option value="$PROJECT_DIR$/client/assets/js/jquery.slimscroll.min.js" />
+        <option value="$PROJECT_DIR$/client/assets/js/jquery.scrollTo-min.js" />
+        <option value="$PROJECT_DIR$/client/assets/js/core.js" />
+        <option value="$PROJECT_DIR$/client/assets/js/jquery.migrate.min.js" />
+        <option value="$PROJECT_DIR$/client/views/wall/wall.js" />
+        <option value="$PROJECT_DIR$/client/helpers/handlebars.js" />
+        <option value="$PROJECT_DIR$/collections/chat.js" />
         <option value="$PROJECT_DIR$/client/views/conversations/conversation.html" />
+        <option value="$PROJECT_DIR$/client/views/conversations/conversations.html" />
         <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/client/views/wall/wall.html" />
+        <option value="$PROJECT_DIR$/client/views/conversations/conversations.js" />
+        <option value="$PROJECT_DIR$/client/views/main/header.js" />
+        <option value="$PROJECT_DIR$/client/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/client/views/main/header.html" />
+        <option value="$PROJECT_DIR$/client/views/friends/friends.html" />
         <option value="$PROJECT_DIR$/router.js" />
       </list>
     </option>
@@ -196,6 +216,10 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -212,10 +236,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,8 +314,26 @@
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,6 +350,14 @@
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -321,6 +367,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistory" value="" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/assets/js" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -502,34 +553,11 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/friends/friends.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="31" selection-start="543" selection-end="553" vertical-scroll-proportion="0.3569405" vertical-offset="0" max-vertical-offset="1059" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/friends.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="93" selection-start="112" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/helpers/handlebars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="267" selection-end="279" vertical-scroll-proportion="0.22096318" vertical-offset="0" max-vertical-offset="1059" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/friends/friends.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="25" selection-start="846" selection-end="983" vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="1566" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="176" selection-end="176" vertical-scroll-proportion="0.101983" vertical-offset="0" max-vertical-offset="1059" />
+        <state line="5" column="93" selection-start="112" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/controllers/messages_controller.js">
@@ -542,44 +570,167 @@
         <state line="16" column="12" selection-start="353" selection-end="353" vertical-scroll-proportion="0.16997167" vertical-offset="108" max-vertical-offset="1206" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/conversations.js">
+    <entry file="file://$PROJECT_DIR$/client/views/people/people.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="55" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+        <state line="10" column="94" selection-start="477" selection-end="494" vertical-scroll-proportion="0.1744186" vertical-offset="0" max-vertical-offset="1032">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.html">
+    <entry file="file://$PROJECT_DIR$/packages/user-status/status.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="270">
+        <state line="27" column="38" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.47093022" vertical-offset="0" max-vertical-offset="3798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/conversations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="8" selection-start="127" selection-end="127" vertical-scroll-proportion="0.101983" vertical-offset="0" max-vertical-offset="1059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/friends/friends.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="5" selection-start="483" selection-end="483" vertical-scroll-proportion="0.32294616" vertical-offset="0" max-vertical-offset="1059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/js/jquery.slimscroll.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="348" selection-start="0" selection-end="4707" vertical-scroll-proportion="0.2581262" vertical-offset="0" max-vertical-offset="1046">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/js/heartcode-canvasloader-min-0.9.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1046">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/js/jquery.scrollTo-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="305" selection-start="630" selection-end="630" vertical-scroll-proportion="0.017664377" vertical-offset="0" max-vertical-offset="1019">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/js/jquery.migrate.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="7085" selection-start="7199" selection-end="7199" vertical-scroll-proportion="0.017208412" vertical-offset="0" max-vertical-offset="1046">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/helpers/handlebars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="11" selection-start="641" selection-end="641" vertical-scroll-proportion="0.407932" vertical-offset="0" max-vertical-offset="1059">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/conversations/conversation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="756">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="63" selection-start="195" selection-end="207" vertical-scroll-proportion="0.101983" vertical-offset="0" max-vertical-offset="1059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/wall/wall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="59" selection-start="2341" selection-end="2341" vertical-scroll-proportion="0.9320113" vertical-offset="273" max-vertical-offset="1422">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="37" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+        <state line="3" column="46" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="41" selection-start="486" selection-end="486" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/wall/wall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="18" selection-start="734" selection-end="734" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="1296">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/main/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="48" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="1962">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/main/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="59" selection-start="777" selection-end="788" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/main/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="16" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/friends/friends.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="45" selection-start="914" selection-end="914" vertical-scroll-proportion="-10.0" vertical-offset="198" max-vertical-offset="1674">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="1098">
+        <state line="29" column="79" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1152">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="3046" selection-end="3046" vertical-scroll-proportion="0.88101983" vertical-offset="939" max-vertical-offset="2088">
+        <state line="19" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="0.32294616" vertical-offset="0" max-vertical-offset="2106">
           <folding />
         </state>
       </provider>

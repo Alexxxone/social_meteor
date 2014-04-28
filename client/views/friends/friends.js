@@ -17,9 +17,6 @@ Template.invites.events({
 Template.my_friends.events({
     'click .delete_friend':function(){
         Meteor.call('delete_friend', this._id);
-    },
-    'click .start_chat': function(){
-        Meteor.call('start_chat', this._id);
     }
 });
 

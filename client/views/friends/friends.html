@@ -24,15 +24,17 @@
         <div class="row">
             <div class="col-lg-12 each_friend_in_list">
                 <div class="col-lg-2">
-                    <img src="/img/deactivated_100.gif" alt="image" class="img-thumbnail"/>
+                    <a href="{{pathFor 'wall'}}">
+                        <img src="/img/deactivated_100.gif" alt="image" class="img-thumbnail"/>
+                    </a>
                 </div>
                 <div class="col-lg-6">
                     <p> {{profile.name}}</p>
-                    <p> {{ emails_address emails}}</p>
+                    <p> {{emails_address emails}}</p>
                 </div>
                 <div class="col-lg-4">
                     <p><a href="javascript:;" class="delete_friend">Delete from friends</a></p>
-                    <p><a href="javascript:;" class="start_chat">Start Chat</a></p>
+                    <p><a href="{{pathFor 'conversation'}}" class="start_chat">Start Chat</a></p>
                 </div>
             </div>
         </div>
@@ -43,7 +45,9 @@
         <div class="row">
             <div class="col-lg-12 each_friend_in_list">
                 <div class="col-lg-2">
-                    <img src="/img/deactivated_100.gif" alt="image" class="img-thumbnail"/>
+                    <a href="{{pathFor 'wall'}}">
+                        <img src="/img/deactivated_100.gif" alt="image" class="img-thumbnail"/>
+                    </a>
                 </div>
                 <div class="col-lg-6">
                     <p> {{profile.name}}</p>
@@ -62,7 +66,9 @@
         <div class="row">
             <div class="col-lg-12 each_friend_in_list">
                 <div class="col-lg-2">
-                    <img src="/img/deactivated_100.gif" alt="image" class="img-thumbnail"/>
+                    <a href="{{pathFor 'wall'}}">
+                        <img src="/img/deactivated_100.gif" alt="image" class="img-thumbnail"/>
+                    </a>
                 </div>
                 <div class="col-lg-6">
                     <p> {{profile.name}}</p>

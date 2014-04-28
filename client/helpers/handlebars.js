@@ -20,18 +20,16 @@ Handlebars.registerHelper("prettifyDate", function(timestamp){
 Handlebars.registerHelper('emails_address', function(emails) {
     return  emails[0].address;
 });
-
-Handlebars.registerHelper("status", function(user_id){
-
-    status = Meteor.users.findOne({_id: user_id}).status;
-    console.log(Meteor.users.findOne({_id: user_id}));
-    if(status && status.online){
-        status_s = 'online';
+Handlebars.registerHelper('last_message_exist', function(last) {
+    console.log(last);
+    if(last){
+        return  true;
     }else{
-        status_s = 'offline';
+        return false;
     }
-    return status_s
 });
+
+
 
 
 

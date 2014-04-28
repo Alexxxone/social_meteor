@@ -8,7 +8,8 @@ Router.configure({
     },
 
     before: function() {
-//        this.subscribe('site_names').wait();
+        $('.friends_search_list').addClass('slow_hidden');
+//        this.subscribe('friends');
         if (!Meteor.userId() && this.route.name != 'register' && this.route.name != 'login') {
             return Router.go('login');
         }
@@ -18,7 +19,7 @@ Router.configure({
 Router.map(function() {
     this.route("home", {
         path: '/',
-        template: 'home',
+        template: 'wall',
         waitOn: function(){
             return Meteor.subscribe('wall',Meteor.userId());
         }
@@ -97,7 +98,7 @@ Router.map(function() {
 
     this.route("wall", {
         path: ':_id',
-        template: 'home',
+        template: 'wall',
         waitOn: function(){
             return [Meteor.subscribe('wall',this.params._id),Meteor.subscribe('user',this.params._id)];
         }

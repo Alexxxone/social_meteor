@@ -35,12 +35,15 @@ Meteor.publish("conversations", function() {
     return Conversations.find({members: this.userId});
 });
 
-Meteor.publish("conversation", function(conv_id) {
-
-    return Conversations.find();
+Meteor.publish("conversation", function(friend_id) {
+    convers = Conversations.find({ members:  { $all : [ this.userId, friend_id ] } });
+    if(convers.count() == 0){
+        Conversations.insert( {members: [this.userId, friend_id ]} );
+    }
+    return Conversations.find({ members:  { $all : [ this.userId, friend_id ] } });
 });
-Meteor.publish("chat", function(conv_id) {
-
+Meteor.publish("chat", function(friend_id) {
+    conv_id = Conversations.findOne({ members:  { $all : [ this.userId, friend_id ] } })._id;
     return Chat.find({conv_id: conv_id});
 });
 
