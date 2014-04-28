@@ -1,17 +1,20 @@
-Meteor.publish("conversations", function() {
-    return Conversations.find({ members: {$in: [this.userId] }}, {limit: 10, sort: {created_at: -1} });
-});
+//Meteor.publish("conversations", function() {
+//    return Conversations.find({ members: {$in: [this.userId] }}, {limit: 10, sort: {created_at: -1} });
+//});
 
 
 Meteor.publish("people", function() {
-    return Meteor.users.find({ _id: { $ne: this.userId } });
+    return Meteor.users.find({});
 });
 
 
 
 
 Meteor.publish("friends", function() {
-    return Friends.find({members: this.userId});
+    friends = Friends.find({members: this.userId});
+    my_friends =   _.flatten(_.pluck(friends.fetch(),'members'));
+    console.log(my_friends);
+    return [Meteor.users.find({_id: { $in: my_friends } }),friends];
 });
 Meteor.publish("my_invites", function() {
     invites = Invites.find({sender: this.userId});
@@ -21,8 +24,27 @@ Meteor.publish("my_invites", function() {
 
 
 Meteor.publish("invites", function() {
-    return Invites.find({receiver: this.userId});
+    invites = Invites.find({receiver: this.userId});
+    my_invites = _.pluck(invites.fetch(),'sender');
+    return [Meteor.users.find({_id: { $in: my_invites } }),invites];
 });
+
+
+Meteor.publish("conversations", function() {
+    conversations = Conversations.find({members: this.userId});
+    return Conversations.find({members: this.userId});
+});
+Meteor.publish("conversation", function(conv_id) {
+
+    return Conversations.find();
+});
+Meteor.publish("chat", function(conv_id) {
+
+    return Chat.find({conv_id: conv_id});
+});
+
+
+
 
 
 
