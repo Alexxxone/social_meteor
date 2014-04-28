@@ -4,7 +4,8 @@
     "basePackages": {
       "iron-router": {},
       "bootswatch-yeti": {},
-      "font-awesome": {}
+      "font-awesome": {},
+      "user-status": {}
     },
     "packages": {
       "iron-router": {
@@ -22,10 +23,20 @@
         "tag": "v4.0.3",
         "commit": "61e9361384347547ae144f8228faa4deffda23db"
       },
+      "user-status": {
+        "git": "https://github.com/mizzao/meteor-user-status.git",
+        "tag": "v0.3.5",
+        "commit": "d325a3ab62742659e195085ead76b1ed736aab35"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
         "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      },
+      "timesync": {
+        "git": "https://github.com/mizzao/meteor-timesync.git",
+        "tag": "v0.1.5",
+        "commit": "3ee7eb21f60650de2ca32661b7c964e464e578e3"
       }
     }
   }

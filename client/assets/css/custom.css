@@ -25,3 +25,58 @@ body{
     border-collapse:collapse;
     vertical-align: middle;
 }
+
+.wall_records_header{
+    background-color: #D7F4FF;
+    height: 50px;
+    padding: 15px 20px 0 20px;
+    margin-bottom: 20px;
+}
+.wall_profile_header{
+    background-color: #D7F4FF;
+    height: 25px;
+    padding: 5px 20px 0 20px;
+}
+.wall_records_header a{
+    font-weight: 500;
+    cursor: pointer;
+}
+.wall_records_header a:hover{
+    text-decoration: none;
+}
+.new_wall{
+    transition: .5s;
+}
+.append_to_wall{
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 8px;
+}
+.slow_hidden{
+    transition: .5s;
+    opacity: 0;
+}
+.wall_textarea{
+    min-height: 33px;
+    height: 33px;
+    transition: .5s;
+}
+.wall_append_box{
+    transition: .5s;
+    border: 1px solid lightblue;
+    position: relative;
+    width: 66px;
+    padding: 10px;
+    left: 93%;
+}
+.wall_append_box a{
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+.each_wall_in_list{
+    min-height: 65px;
+    padding: 5px;
+    border:1px solid rgba(215, 244, 255, 0.52);
+    border-collapse:collapse;
+    vertical-align: middle;
+}

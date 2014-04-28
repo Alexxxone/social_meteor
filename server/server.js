@@ -34,6 +34,7 @@ Meteor.publish("conversations", function() {
     conversations = Conversations.find({members: this.userId});
     return Conversations.find({members: this.userId});
 });
+
 Meteor.publish("conversation", function(conv_id) {
 
     return Conversations.find();
@@ -44,6 +45,12 @@ Meteor.publish("chat", function(conv_id) {
 });
 
 
+Meteor.publish("wall", function(_id) {
+    return Walls.find({owner: _id});
+});
+Meteor.publish("user", function(_id) {
+    return Meteor.users.find(_id);
+});
 
 
 

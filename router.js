@@ -18,8 +18,12 @@ Router.configure({
 Router.map(function() {
     this.route("home", {
         path: '/',
-        template: 'home'
+        template: 'home',
+        waitOn: function(){
+            return Meteor.subscribe('wall',Meteor.userId());
+        }
     });
+
     this.route("login", {
         path: "/login",
         yieldTemplates: {
@@ -61,6 +65,7 @@ Router.map(function() {
             }
         }
     });
+
     this.route("conversations", {
         path: "/conversations",
         waitOn: function(){
@@ -88,6 +93,15 @@ Router.map(function() {
         }
     });
 
+
+
+    this.route("wall", {
+        path: ':_id',
+        template: 'home',
+        waitOn: function(){
+            return [Meteor.subscribe('wall',this.params._id),Meteor.subscribe('user',this.params._id)];
+        }
+    });
 
 
 
