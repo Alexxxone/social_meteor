@@ -23,9 +23,13 @@ Meteor.publish("my_invites", function() {
 Meteor.publish("invites", function() {
     return Invites.find({receiver: this.userId});
 });
-Meteor.publish("wall", function() {
-    return Walls.find({owner: this.userId});
+Meteor.publish("wall", function(_id) {
+    return Walls.find({owner: _id});
 });
+Meteor.publish("user", function(_id) {
+    return Meteor.users.find(_id);
+});
+
 
 
 

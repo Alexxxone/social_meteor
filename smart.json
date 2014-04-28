@@ -2,6 +2,7 @@
   "packages": {
     "iron-router": {},
     "bootswatch-yeti": {},
-    "font-awesome": {}
+    "font-awesome": {},
+    "user-status": {}
   }
 }
