@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="0.32294616" vertical-offset="0" max-vertical-offset="2106">
+            <state line="19" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2106">
               <folding />
             </state>
           </provider>
@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/views/main/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="59" selection-start="777" selection-end="788" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="1674">
+            <state line="22" column="52" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.38372093" vertical-offset="0" max-vertical-offset="1674">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file leaf-file-name="friends.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/friends/friends.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="45" selection-start="914" selection-end="914" vertical-scroll-proportion="-10.0" vertical-offset="198" max-vertical-offset="1674">
+            <state line="73" column="101" selection-start="3008" selection-end="3008" vertical-scroll-proportion="-31.333334" vertical-offset="468" max-vertical-offset="1674">
               <folding />
             </state>
           </provider>
@@ -71,7 +71,7 @@
       <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="48" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="1962">
+            <state line="57" column="14" selection-start="1083" selection-end="1083" vertical-scroll-proportion="-3.5555556" vertical-offset="930" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
@@ -114,10 +114,10 @@
         <option value="$PROJECT_DIR$/client/views/wall/wall.html" />
         <option value="$PROJECT_DIR$/client/views/conversations/conversations.js" />
         <option value="$PROJECT_DIR$/client/views/main/header.js" />
+        <option value="$PROJECT_DIR$/router.js" />
+        <option value="$PROJECT_DIR$/client/views/friends/friends.html" />
         <option value="$PROJECT_DIR$/client/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/client/views/main/header.html" />
-        <option value="$PROJECT_DIR$/client/views/friends/friends.html" />
-        <option value="$PROJECT_DIR$/router.js" />
       </list>
     </option>
   </component>
@@ -236,6 +236,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="people" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -570,13 +592,6 @@
         <state line="16" column="12" selection-start="353" selection-end="353" vertical-scroll-proportion="0.16997167" vertical-offset="108" max-vertical-offset="1206" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/people/people.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="94" selection-start="477" selection-end="494" vertical-scroll-proportion="0.1744186" vertical-offset="0" max-vertical-offset="1032">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/user-status/status.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="38" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.47093022" vertical-offset="0" max-vertical-offset="3798">
@@ -693,30 +708,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="48" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="1962">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/main/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="59" selection-start="777" selection-end="788" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="1674">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/main/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="16" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/friends/friends.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="45" selection-start="914" selection-end="914" vertical-scroll-proportion="-10.0" vertical-offset="198" max-vertical-offset="1674">
           <folding />
         </state>
       </provider>
@@ -728,9 +722,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/people/people.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="101" selection-start="440" selection-end="501" vertical-scroll-proportion="0.1744186" vertical-offset="0" max-vertical-offset="1032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="0.32294616" vertical-offset="0" max-vertical-offset="2106">
+        <state line="19" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2106">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/friends/friends.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="101" selection-start="3008" selection-end="3008" vertical-scroll-proportion="-31.333334" vertical-offset="468" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="14" selection-start="1083" selection-end="1083" vertical-scroll-proportion="-3.5555556" vertical-offset="930" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/main/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="52" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.38372093" vertical-offset="0" max-vertical-offset="1674">
           <folding />
         </state>
       </provider>

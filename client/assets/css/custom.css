@@ -55,6 +55,7 @@ body{
 .slow_hidden{
     transition: .5s;
     opacity: 0;
+    height: 0;
 }
 .wall_textarea{
     min-height: 33px;
