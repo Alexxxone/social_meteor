@@ -1,0 +1,1 @@
+Walls = new Meteor.Collection("walls");

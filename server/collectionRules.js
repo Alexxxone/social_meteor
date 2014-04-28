@@ -11,6 +11,20 @@ Chat.allow({
         return userId && message.sender === userId;
     }
 });
+
+Walls.allow({
+    insert: function(userId, friends) {
+        return true;
+    },
+    update: function() {
+        return false;
+    },
+    remove: function(userId, message) {
+        return true;
+    }
+});
+
+
 Friends.allow({
     insert: function(userId, friends) {
         return true;
