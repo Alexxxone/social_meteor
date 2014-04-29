@@ -72,4 +72,14 @@ Conversations.allow({
     }
 });
 
+ImagesFS.allow({
+    insert: function(userId, file) { return userId && file.owner === userId; },
+
+    update: function(userId, file, fields, modifier) {
+        return userId && file.owner === userId;
+    },
+    remove: function(userId, file) {return userId && file.owner === userId; }
+});
+
+
 

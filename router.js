@@ -13,16 +13,25 @@ Router.configure({
         if (!Meteor.userId() && this.route.name != 'register' && this.route.name != 'login') {
             return Router.go('login');
         }
+        if (Meteor.user().profile.locked_screen && this.route.name != 'locked_screen'){
+            return Router.go('locked_screen');
+        }
     }
 });
 
 Router.map(function() {
     this.route("home", {
         path: '/',
-        template: 'wall',
+        template: 'my_wall',
         waitOn: function(){
-            return Meteor.subscribe('wall',Meteor.userId());
+            return [Meteor.subscribe('wall',Meteor.userId()),Meteor.subscribe('myFiles')];
         }
+    });
+    this.route("locked_screen", {
+        path: "/locked",
+        yieldTemplates: {
+        }
+
     });
 
     this.route("login", {

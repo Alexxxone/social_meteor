@@ -56,5 +56,24 @@ Meteor.publish("user", function(_id) {
 });
 
 
+Meteor.publish("myFiles", function() {
+    return ImagesFS.find({ owner: this.userId });
+});
 
+FS.HTTP.publish(ImagesFS, function () {
+    // `this` provides a context similar to Meteor.publish
+    return ImagesFS.find();
+});
+
+
+
+//var handler = {
+//    "imageUrl": function (options) {
+//        return {
+//            blob: options.blob,
+//            fileRecord: options.fileRecord
+//        };
+//    }
+//}
+//ImagesFS.fileHandlers(handler);
 

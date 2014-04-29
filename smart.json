@@ -3,6 +3,8 @@
     "iron-router": {},
     "bootswatch-yeti": {},
     "font-awesome": {},
-    "user-status": {}
+    "user-status": {},
+    "collectionFS": {},
+    "cfs-public-folder": {}
   }
 }

@@ -34,12 +34,16 @@ Template.conversations.events({
 });
 
 Template.chat.rendered = function(){
-    console.log(this);
    this.$('.row .col-lg-7 p').emotions();
 };
-
+Template.conversations.rendered = function(){
+    Meteor.setTimeout(function() {
+        this.$('.row .col-lg-7 p').emotions();
+    },100);
+};
 
 Template.conversation.rendered = function(){
+
     Meteor.setTimeout(function() {
         $('#conversation_box').slimScroll({height: '700px',start: 'bottom'});
 

@@ -11,3 +11,7 @@ accounts-password
 coffeescript
 font-awesome
 user-status
+collectionFS
+cfs-filesystem
+cfs-public-folder
+cfs-storage-adapter

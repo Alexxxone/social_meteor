@@ -4,7 +4,11 @@ Template.header.events({
     },
     'click .friends_search': function(){
         $('.friends_search_list').removeClass('slow_hidden');
+    },
+    'click .lock_screen':function(){
+        Meteor.call('locked_screen_enable');
     }
+
 });
 
 Template.header.friends = function(){

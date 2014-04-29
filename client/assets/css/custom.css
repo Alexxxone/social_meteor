@@ -21,23 +21,26 @@ body{
 .each_friend_in_list {
     min-height: 125px;
     padding: 5px;
-    border:1px solid rgba(215, 244, 255, 0.52);
+    border:1px solid #7CB7CE;
     border-collapse:collapse;
     vertical-align: middle;
 }
 
 .wall_records_header{
-    background-color: #D7F4FF;
+    background-color: #008CBA;
     height: 50px;
     padding: 15px 20px 0 20px;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 .wall_profile_header{
-    background-color: #D7F4FF;
+    background-color: #008CBA;
     height: 25px;
     padding: 5px 20px 0 20px;
+    color: #ffffff;
 }
 .wall_records_header a{
+    color: #ffffff;
     font-weight: 500;
     cursor: pointer;
 }
@@ -101,5 +104,52 @@ body{
 }
 .slimScrollDiv{
 
+    margin-bottom: 20px;
+}
+.bordered_row{
+    border: 1px solid #7CB7CE;
+    padding: 5px 0;
+}
+/* AVATAR MODAL*/
+#avatar_modal_wrapper{
+    background-color: #7DB0B4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+#avatar_modal{
+    margin: 0 auto;
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    left: 41%;
+
+}
+
+/* LOCKED SCREEN */
+#locked_screen_wrap{
+    background-color: #7DB0B4;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    top: 0;
+    left: 0;
+}
+#locked_screen{
+    border-radius: 5px;
+    padding: 10px;
+    width: inherit;
+    top: 300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 12;
+}
+#locked_form input{
+    margin-top: 5px;
     margin-bottom: 20px;
 }
