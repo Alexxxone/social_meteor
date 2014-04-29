@@ -8,10 +8,10 @@
 
 
     <div class="row">
-        <div class="col-lg-5">
-            <img src="/img/deactivated_100.gif" class="my_avatar"/>
+        <div class="col-lg-4">
+            <img src="/img/deactivated_100.gif" class="my_avatar avatar"/>
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-8">
             {{#if on_mind currentUser.profile.on_mind}}
                 <a class="change_status text-muted">{{currentUser.profile.on_mind}}</a>
             {{else}}
@@ -21,15 +21,14 @@
                 <input type="text" class="form-control change_status_box_input" value="{{currentUser.profile.on_mind}}"/>
                 <button class="btn btn-success btn-sm change_status_box_save">Save</button>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            {{#each images}}
+            <h6 class="wall_profile_header"><a href="javascript:;" class="pull-right"><strong >Show all pictures</strong></a></h6>
+            {{#each wallImages}}
                 <img src="{{url store='images'}}" height="100" width="100"/>
+                <button class="btn btn-warning btn-xs remove_image">X</button>
             {{/each}}
         </div>
     </div>
+
 
     <div class="row">
         <div class="col-lg-12">

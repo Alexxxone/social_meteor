@@ -85,7 +85,15 @@ body{
     vertical-align: middle;
 }
 
-
+/* MY WALL*/
+.avatar{
+    height: 170px;
+}
+.remove_image{
+    position: relative;
+    left: -30px;
+    bottom: 35px;
+}
 /* HEADER */
 .friends_search_list{
     width: 200px;

@@ -9,22 +9,27 @@ Notifications = new Meteor.Collection("notifications");
 
 ImagesFS = new FS.Collection("images", {
     stores: [
-        new FS.Store.FileSystem('images', {path: "~/myfiles"})
+        new FS.Store.FileSystem('images')
 
     ],
     filter: {
+        maxSize: 1048576, //in bytes
         allow: {
-            contentTypes: ['image/*'] //allow only images in this FS.Collection
+            contentTypes: ['image/*'],
+            extensions: ['png','jpg','jpeg']
+        },
+        deny: {
+            contentTypes: ['images/*'],
+            extensions: ['pngs']
+        },
+        onInvalid: function (message) {
+            if (Meteor.isClient) {
+                alert(message);
+            } else {
+                console.log(message);
+            }
         }
     }
 });
 
 
-
-
-//  jquery-jcrop
-//  cfs-base-package
-//  collectionFS
-//  cfs-public-folder
-//  cfs-storage-adapter
-//  cfs-filesystem

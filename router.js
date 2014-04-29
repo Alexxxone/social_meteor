@@ -13,7 +13,7 @@ Router.configure({
         if (!Meteor.userId() && this.route.name != 'register' && this.route.name != 'login') {
             return Router.go('login');
         }
-        if (Meteor.user().profile.locked_screen && this.route.name != 'locked_screen'){
+        if (Meteor.userId() && Meteor.user().profile.locked_screen && this.route.name != 'locked_screen' && this.route.name != 'register' && this.route.name != 'login'){
             return Router.go('locked_screen');
         }
     }

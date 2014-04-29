@@ -9,6 +9,9 @@ Template.my_wall.helpers({
     images: function(){
         return ImagesFS.find();
     },
+    wallImages:function(){
+        return ImagesFS.find({},{limit:3,sort:{created_at: -1}});
+    },
     on_mind: function(on_mind){
         if(on_mind && on_mind.length){
             return true;
@@ -29,6 +32,9 @@ Template.my_wall.events({
             frag = UI.render(Template.avatar);
             UI.insert(frag,document.body);
         }
+    },
+    'click .remove_image':function(){
+        ImagesFS.remove(this._id);
     },
     'click .wall_records_header a': function(e){
         e.preventDefault();
