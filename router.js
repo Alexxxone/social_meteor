@@ -8,7 +8,8 @@ Router.configure({
     },
 
     before: function() {
-//        this.subscribe('site_names').wait();
+        $('.friends_search_list').addClass('slow_hidden');
+//        this.subscribe('friends');
         if (!Meteor.userId() && this.route.name != 'register' && this.route.name != 'login') {
             return Router.go('login');
         }
@@ -18,7 +19,7 @@ Router.configure({
 Router.map(function() {
     this.route("home", {
         path: '/',
-        template: 'home',
+        template: 'wall',
         waitOn: function(){
             return Meteor.subscribe('wall',Meteor.userId());
         }
@@ -49,7 +50,9 @@ Router.map(function() {
         },
         data: {
             my_friends: function(){
-                return Meteor.users.find({});
+                friends = Friends.find({members: Meteor.userId() });
+                my_friends =   _.flatten(_.pluck(friends.fetch(),'members'));
+                return Meteor.users.find({$and:[{_id: { $in: my_friends } }, {_id: {$ne: Meteor.userId()}}] });
             },
             my_invites: function(){
                 invites = Invites.find({sender: Meteor.userId() });
@@ -63,13 +66,44 @@ Router.map(function() {
             }
         }
     });
+
+    this.route("conversations", {
+        path: "/conversations",
+        waitOn: function(){
+            return Meteor.subscribe('conversations');
+        },
+        data: {
+            conversations: function(){
+                return  Conversations.find();
+            }
+        }
+    });
+    this.route("conversation", {
+        path: "/conversations/:_id",
+        waitOn: function(){
+            var _id = this.params._id;
+            return [Meteor.subscribe('conversation',_id),Meteor.subscribe('chat', _id)];
+        },
+        data: {
+            conv: function(){
+                return Conversations.findOne(Router.current().params._id);
+            },
+             chat_messages: function(){
+                return Chat.find();
+            }
+        }
+    });
+
+
+
     this.route("wall", {
         path: ':_id',
-        template: 'home',
+        template: 'wall',
         waitOn: function(){
             return [Meteor.subscribe('wall',this.params._id),Meteor.subscribe('user',this.params._id)];
         }
     });
+
 
 
 

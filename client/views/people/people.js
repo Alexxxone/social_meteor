@@ -1,5 +1,5 @@
 Template.people.people = function(){
-    return Meteor.users.find();
+    return Meteor.users.find({ _id: { $ne: Meteor.userId()}});
 };
 
 

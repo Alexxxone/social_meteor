@@ -1,9 +1,8 @@
-<template name="home">
+<template name="wall">
 
     <div class="row">
         <div class="col-lg-12 ">
-            <h6 class="wall_profile_header">{{user_name currentProfile.profile}} <span class="text-muted pull-right">{{status currentProfile._id}} </span></h6>
-
+            <h6 class="wall_profile_header">{{user_name currentProfile.profile}} <span class="text-muted pull-right">{{currentProfile.status.online}} </span></h6>
         </div>
     </div>
 
@@ -13,6 +12,11 @@
             <img src="/img/deactivated_100.gif" />
         </div>
         <div class="col-lg-7">
+            <a class="change_status text-muted">Change Status</a>
+            <div class="change_status_box slow_hidden">
+                <input type="text" class="form-control change_status_box_input"/>
+                <button class="btn btn-success btn-sm change_status_box_save">Save</button>
+            </div>
         </div>
     </div>
 
@@ -23,7 +27,7 @@
     </div>
     <div class="row">
         <div class="col-lg-11">
-           <textarea  class="form-control wall_textarea"  cols="45" placeholder="Whats New?"></textarea>
+           <textarea  class="form-control wall_textarea" rows="1" cols="45" placeholder="Whats New?"></textarea>
         </div>
         <div class="col-lg-1">
             <i class="fa fa-chevron-down pull-right fa-2x"></i>
@@ -31,8 +35,8 @@
     </div>
     <div class="row">
         <div class="col-lg-12">
-            <button class="btn btn-info btn-sm new_wall hidden">Send</button>
-            <a class="pull-right append_to_wall hidden">Append</a>
+            <button class="btn btn-info btn-sm new_wall slow_hidden">Send</button>
+            <a class="append_to_wall slow_hidden pull-right">Append</a>
             <div class="slow_hidden wall_append_box">
                 <a>Image</a>
                 <a>Video</a>
