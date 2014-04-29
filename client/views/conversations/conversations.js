@@ -1,9 +1,22 @@
+
+
 Template.conversation.events({
     'click .send_message':function(){
         chat_body = $('.chat_body');
         Meteor.call('new_chat',chat_body.val(),Template.conversation.conv()._id);
         scrollToBottom();
         chat_body.val('');
+        $("div#conversation_box .row .col-lg-7 p").emotions();
+
+    },
+    'click #smilesBtn': function(){
+        $("#smilesChoose").toggle();
+    },
+    'click #smilesChoose span':function(e){
+        var inputEl = $(".chat_body");
+        var shortCode = $.emotions.shortcode($(e.currentTarget).attr("title"));
+        inputEl.val(inputEl.val() + " " + shortCode + " ").focus();
+        $("#smilesChoose").toggle();
     }
 });
 Template.conversations.events({
@@ -20,12 +33,21 @@ Template.conversations.events({
     }
 });
 
+Template.chat.rendered = function(){
+    console.log(this);
+   this.$('.row .col-lg-7 p').emotions();
+};
 
 
 Template.conversation.rendered = function(){
     Meteor.setTimeout(function() {
         $('#conversation_box').slimScroll({height: '700px',start: 'bottom'});
+
     },100);
+
+    var smiles = $("#smilesChoose");
+    smiles.emotions();
+
 };
 Template.conversation.destroyed = function(){
     $('.slimScrollDiv').remove()
