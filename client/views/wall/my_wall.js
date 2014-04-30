@@ -18,6 +18,12 @@ Template.my_wall.helpers({
         }
         return false;
     },
+    have_avatar: function(string){
+        if(string){
+            return true;
+        }
+        return false;
+    },
     wall: function(){
         if(Session.get('wall_sort')){
             return Walls.find({sender: Session.get('wall_sort')},{sort: {created_at: -1}});
@@ -27,6 +33,14 @@ Template.my_wall.helpers({
     }
 });
 Template.my_wall.events({
+    'click .wall_image': function(){
+        modal = UI.renderWithData(Template.modal_image, {image: this});
+        UI.insert(modal, document.body);
+    },
+    'click .show_all_wall_images': function(){
+        modal = UI.renderWithData(Template.modal_image, {many: true});
+        UI.insert(modal, document.body);
+    },
     'click .my_avatar':function(){
         if(!$('#avatar_modal').length){
             frag = UI.render(Template.avatar);

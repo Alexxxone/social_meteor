@@ -73,6 +73,9 @@ Conversations.allow({
 });
 
 ImagesFS.allow({
+    download: function(){
+        return true;
+    },
     insert: function(userId, file) {
         return true;
     },
