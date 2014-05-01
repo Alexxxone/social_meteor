@@ -2,16 +2,23 @@ Template.avatar.events({
     'change .fileUploader': function (event) {
         var fsFile = new FS.File(event.target.files[0]);
         fsFile.owner = Meteor.userId();
-        ImagesFS.insert(fsFile, function (err,s) {
+        im_id = ImagesFS.insert(fsFile, function (err,s) {
             if (err) throw err;
+
+
+
+
+//        TODO    ЗАпихнуть к юзеру в аватар
+            //        Meteor.users.update({_id: Meteor.userId()},{$set:{'profile.avatar': im_id.url()}});
             console.log(s);
         });
+
     },
     'click .deleteFile': function () {
         ImagesFS.remove({_id: this._id})
     },
     'click .asAvatar': function () {
-        Meteor.users.update({_id: Meteor.userId()},{$set: {'profile.avatar':this.fileHandler.imageUrl.url}})
+//        Meteor.users.update({_id: Meteor.userId()},{$set: {'profile.avatar':this.fileHandler.imageUrl.url}})
     },
     'click #avatar_modal_wrapper':function(){
         $('#avatar_modal, #avatar_modal_wrapper').remove();

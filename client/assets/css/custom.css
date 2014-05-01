@@ -59,6 +59,7 @@ body{
     transition: .5s;
     opacity: 0;
     height: 0;
+    width: 0;
 }
 .wall_textarea{
     min-height: 33px;
@@ -93,6 +94,9 @@ body{
     position: relative;
     left: -30px;
     bottom: 35px;
+}
+.change_status_box_input{
+    width: 85%;
 }
 /* HEADER */
 .friends_search_list{

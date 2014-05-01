@@ -20,7 +20,24 @@ Template.wall.helpers({
 
 
 Template.wall.events({
-  'click .wall_records_header a': function(e){
+    'click .wall_image': function(){
+        modal = UI.renderWithData(Template.modal_image, {image: this});
+        UI.insert(modal, document.body);
+    },
+    'click .show_all_wall_images': function(){
+        modal = UI.renderWithData(Template.modal_image, {many: true});
+        UI.insert(modal, document.body);
+    },
+    'click .avatar':function(){
+        user = Template.wall.currentProfile().profile;
+        if(user.avatar){
+            modal = UI.renderWithData(Template.modal_image, {url: user.avatar});
+            UI.insert(modal, document.body);
+        }else{
+            Meteor.call('notify',user.name+' does not have avatar yet.', 'Info' )
+        }
+    },
+    'click .wall_records_header a': function(e){
       e.preventDefault();
       user = Template.wall.currentProfile();
       if(Session.get('wall_sort')){
@@ -30,7 +47,7 @@ Template.wall.events({
           $(e.currentTarget).text('Show All records');
           Session.set('wall_sort',user._id);
       }
-  },
+    },
     'focusin .wall_textarea': function(){
        $('.fa-chevron-down').click();
     },
