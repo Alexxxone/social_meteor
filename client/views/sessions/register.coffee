@@ -8,11 +8,11 @@
       if confirmation is password and name isnt ''
         Accounts.createUser email : email, password : password, profile: name : name  , (err)->
           if err
-            console.log(err)
+            Meteor.call('notify',err.reason, 'Error')
           else
             Router.go('/')
       else
-        console.log("Password fields not Match! Or Empty Name!","error")
+        Meteor.call('notify',"Password fields not Match! Or Empty Name!", 'Error')
       false
 
 secureInput = (val) ->

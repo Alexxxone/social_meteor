@@ -86,5 +86,8 @@ ImagesFS.allow({
     remove: function(userId, file) {return userId && file.owner === userId; }
 });
 
+FS.HTTP.setHeadersForGet([
+    ['Cache-Control', 'public, max-age=31536000']
+]);
 
 

@@ -7,6 +7,17 @@ Meteor.publish("people", function() {
     return Meteor.users.find({});
 });
 
+Meteor.publish("one_friend", function(friend_id) {
+    return Friends.find({ members:  { $all : [ this.userId, friend_id ] } });
+});
+
+Meteor.publish("one_my_invite", function(friend_id) {
+    return Invites.find({$and:[{sender: this.userId},{receiver: friend_id}]});
+});
+Meteor.publish("one_invite", function(friend_id) {
+    return Invites.find({$and:[{receiver: this.userId},{sender: friend_id}]});
+});
+
 
 
 
@@ -55,7 +66,9 @@ Meteor.publish("user", function(_id) {
     return Meteor.users.find(_id);
 });
 
-
+Meteor.publish("wallFiles", function(user_id) {
+    return ImagesFS.find({ owner: user_id });
+});
 Meteor.publish("myFiles", function() {
     return ImagesFS.find({ owner: this.userId });
 });

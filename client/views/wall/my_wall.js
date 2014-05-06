@@ -1,16 +1,6 @@
-//unless $('#contactModal').length
-//frag = Meteor.render(Template.contact)
-//document.body.appendChild(frag)
-//else
-//$('#contactModal').modal('show')
-
-
 Template.my_wall.helpers({
-    images: function(){
-        return ImagesFS.find();
-    },
     wallImages:function(){
-        return ImagesFS.find({},{limit:3,sort:{created_at: -1}});
+        return ImagesFS.find({},{limit:3, sort:{uploadedAt: -1}});
     },
     on_mind: function(on_mind){
         if(on_mind && on_mind.length){
@@ -18,11 +8,9 @@ Template.my_wall.helpers({
         }
         return false;
     },
-    have_avatar: function(string){
-        if(string){
-            return true;
-        }
-        return false;
+    avatar: function(){
+        user_id = Meteor.userId();
+        return ImagesFS.findOne({$and:[{owner: user_id},{avatar: user_id } ]});
     },
     wall: function(){
         if(Session.get('wall_sort')){
@@ -33,6 +21,14 @@ Template.my_wall.helpers({
     }
 });
 Template.my_wall.events({
+    'click .avatar':function(){
+        avatar = ImagesFS.findOne({$and:[{owner: Meteor.userId()},{avatar: Meteor.userId() } ]});
+        modal = UI.renderWithData(Template.modal_image, {image: avatar});
+        UI.insert(modal, document.body);
+    },
+    'click .asAvatar': function () {
+        Meteor.call('set_avatar', this._id, Meteor.userId());
+    },
     'click .wall_image': function(){
         modal = UI.renderWithData(Template.modal_image, {image: this});
         UI.insert(modal, document.body);
@@ -52,7 +48,7 @@ Template.my_wall.events({
     },
     'click .wall_records_header a': function(e){
         e.preventDefault();
-        user = Template.wall.currentProfile();
+        user = Meteor.user();
         if(Session.get('wall_sort')){
             $(e.currentTarget).text('Show only '+user.profile.name+' records');
             Session.set('wall_sort',false);
@@ -82,7 +78,6 @@ Template.my_wall.events({
         message = $('.wall_textarea');
         Meteor.call('new_wall', message.val(),Meteor.userId());
         message.val('');
-
     },
     'click .remove_wall': function(){
         Meteor.call('remove_wall', this._id);
@@ -97,8 +92,6 @@ Template.my_wall.events({
                $('.change_status_box').toggleClass('slow_hidden');
            }
         });
-
-
     }
 });
 
