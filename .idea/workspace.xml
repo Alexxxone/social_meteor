@@ -36,16 +36,16 @@
       <file leaf-file-name="my_wall.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/wall/my_wall.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="80" selection-start="720" selection-end="926" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1854">
+            <state line="89" column="27" selection-start="3264" selection-end="3264" vertical-scroll-proportion="-11.553572" vertical-offset="955" max-vertical-offset="1854">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wall.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="wall.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/wall/wall.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="327" selection-end="327" vertical-scroll-proportion="0.226178" vertical-offset="0" max-vertical-offset="2844">
+            <state line="12" column="6" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2844">
               <folding />
             </state>
           </provider>
@@ -78,15 +78,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/sessions/register.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="73" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="friends.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/friends/friends.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,10 +87,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/router.js">
+      <file leaf-file-name="register.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/sessions/register.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="51" selection-start="3375" selection-end="3388" vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="2268">
+            <state line="6" column="43" selection-start="292" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/views/sessions/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="11" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.44612068" vertical-offset="0" max-vertical-offset="928">
               <folding />
             </state>
           </provider>
@@ -162,8 +162,9 @@
         <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/client/views/wall/wall.html" />
-        <option value="$PROJECT_DIR$/client/views/sessions/register.coffee" />
         <option value="$PROJECT_DIR$/client/views/wall/wall.js" />
+        <option value="$PROJECT_DIR$/client/views/sessions/register.coffee" />
+        <option value="$PROJECT_DIR$/client/views/sessions/login.html" />
       </list>
     </option>
   </component>
@@ -469,11 +470,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/views/wall/wall.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="1242" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="17" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="1692" max-vertical-offset="2898" />
@@ -614,11 +610,6 @@
         <state line="4" column="34" selection-start="102" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="121" selection-start="96" selection-end="177" vertical-scroll-proportion="0.0565445" vertical-offset="0" max-vertical-offset="955" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/pictures/modal_image.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="928" />
@@ -691,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/wall/my_wall.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="80" selection-start="720" selection-end="926" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1854">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/friends.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="17" selection-start="356" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
@@ -726,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/people/people.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="45" selection-start="647" selection-end="667" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/wall/wall.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="34" selection-start="1181" selection-end="1181" vertical-scroll-proportion="-15.333333" vertical-offset="72" max-vertical-offset="1872">
@@ -740,9 +717,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/friends/friends.html">
+    <entry file="file://$PROJECT_DIR$/client/views/wall/wall.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="126" selection-start="3150" selection-end="3331" vertical-scroll-proportion="-12.192983" vertical-offset="709" max-vertical-offset="1674">
+        <state line="12" column="6" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="78" selection-start="156" selection-end="163" vertical-scroll-proportion="0.0565445" vertical-offset="0" max-vertical-offset="955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/wall/my_wall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="27" selection-start="3264" selection-end="3264" vertical-scroll-proportion="-11.553572" vertical-offset="955" max-vertical-offset="1854">
           <folding />
         </state>
       </provider>
@@ -754,16 +745,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/sessions/register.coffee">
+    <entry file="file://$PROJECT_DIR$/client/views/people/people.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="73" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+        <state line="14" column="45" selection-start="647" selection-end="667" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="468">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/wall/wall.js">
+    <entry file="file://$PROJECT_DIR$/client/views/friends/friends.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="327" selection-end="327" vertical-scroll-proportion="0.226178" vertical-offset="0" max-vertical-offset="2844">
+        <state line="78" column="126" selection-start="3150" selection-end="3331" vertical-scroll-proportion="-12.192983" vertical-offset="709" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/sessions/register.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="43" selection-start="292" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/sessions/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="11" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.44612068" vertical-offset="0" max-vertical-offset="928">
           <folding />
         </state>
       </provider>

@@ -4,9 +4,10 @@
       email = secureInput(t.find('#account-email').value)
       password = t.find('#account-password').value
       confirmation = t.find('#confirmation_account-password').value
+      phone = t.find('#confirmation_account-password').value
       name = t.find('#account-name').value
       if confirmation is password and name isnt ''
-        Accounts.createUser email : email, password : password, profile: name : name  , (err)->
+        Accounts.createUser email : email, password : password, profile: {name : name , phone: false, on_mind: false, personal_status: false} , (err)->
           if err
             Meteor.call('notify',err.reason, 'Error')
           else
