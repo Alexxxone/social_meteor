@@ -112,7 +112,9 @@ body{
 .change_status_box_input{
     width: 85%;
 }
-
+.change_status{
+    cursor: pointer;
+}
 .my_avatar{
     background-color: rgba(37, 37, 37, 0.57);
     color: #FFF;
