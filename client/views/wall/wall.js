@@ -11,6 +11,12 @@ Template.wall.helpers({
         }
         return false;
     },
+    online: function(){
+        if(currentProfile().status && currentProfile().status.online){
+           return 'Online';
+        }
+        return 'Offline';
+    },
     wall: function(){
         if(Session.get('wall_sort')){
             return Walls.find({sender: Session.get('wall_sort')},{sort: {created_at: -1}});
