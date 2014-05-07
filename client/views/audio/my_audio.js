@@ -12,7 +12,7 @@ Template.my_audio.events({
         AudioFS.remove({_id: this._id})
     },
     'click .select_song': function(e){
-        $('.songName').text(this.name);
+        $('.songName').text(this.name.split('.mp3')[0]);
         player = document.getElementById('audio-player');
         player.pause();
         player.src = this.url();
@@ -26,7 +26,7 @@ Template.my_audio.events({
             song = $('.select_song:first');
             player.src = song.attr('name');
             song.addClass('currentMusic');
-            $('.songName').text(song.text());
+            $('.songName').text(song.text().split('.mp3')[0]);
         }
         player.play();
 
