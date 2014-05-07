@@ -13,7 +13,7 @@ Template.modal_image.events({
 });
 Template.modal_image.helpers({
     images: function(){
-        return ImagesFS.find();
+        return ImagesFS.find({},{sort:{uploadedAt: -1}});
     }
 });
 

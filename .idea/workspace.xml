@@ -37,19 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="left_menu.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/main/left_menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="193" selection-start="386" selection-end="403" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="270">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="left_menu.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/main/left_menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="20" selection-start="352" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+            <state line="14" column="20" selection-start="352" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="504">
               <folding />
             </state>
           </provider>
@@ -58,7 +49,7 @@
       <file leaf-file-name="chat.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/collections/chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="27" selection-start="298" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+            <state line="7" column="27" selection-start="298" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="288">
               <folding />
             </state>
           </provider>
@@ -67,7 +58,43 @@
       <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="9" selection-start="3250" selection-end="3250" vertical-scroll-proportion="0.0" vertical-offset="1384" max-vertical-offset="2430">
+            <state line="44" column="0" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2448">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/sessions/register.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="23" selection-start="292" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/sessions/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="49" selection-start="939" selection-end="939" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="1026">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/sessions/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="612">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="22" selection-start="35" selection-end="35" vertical-scroll-proportion="-2.8923514" vertical-offset="3081" max-vertical-offset="4140">
               <folding />
             </state>
           </provider>
@@ -76,16 +103,18 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="60" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1692">
-              <folding />
+            <state line="54" column="94" selection-start="2059" selection-end="2059" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="1692">
+              <folding>
+                <marker date="1399483156388" expanded="true" signature="1963:2061" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="4" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.796034" vertical-offset="111" max-vertical-offset="1224">
+            <state line="53" column="4" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
@@ -94,7 +123,7 @@
       <file leaf-file-name="conversations.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="576">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
               <folding />
             </state>
           </provider>
@@ -115,17 +144,18 @@
       <list>
         <option value="$PROJECT_DIR$/../test_barry/yaroslav/bm_v3/app.rb" />
         <option value="$PROJECT_DIR$/../test_barry/yaroslav/bm_v3/assets/javascripts/app/application.coffee" />
-        <option value="$PROJECT_DIR$/client/views/sessions/login.html" />
         <option value="$PROJECT_DIR$/client/assets/css/responsive.css" />
         <option value="$PROJECT_DIR$/client/views/main/main.html" />
         <option value="$PROJECT_DIR$/client/assets/css/custom.css" />
-        <option value="$PROJECT_DIR$/client/views/sessions/register.coffee" />
         <option value="$PROJECT_DIR$/client/views/main/left_menu.html" />
         <option value="$PROJECT_DIR$/collections/chat.js" />
         <option value="$PROJECT_DIR$/client/views/main/left_menu.js" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/router.js" />
-        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/client/views/sessions/register.coffee" />
+        <option value="$PROJECT_DIR$/client/views/sessions/register.html" />
+        <option value="$PROJECT_DIR$/client/views/sessions/login.html" />
       </list>
     </option>
   </component>
@@ -160,23 +190,12 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="social_meteor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social_meteor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -335,6 +354,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -434,7 +454,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25239617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2550586" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296501" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -442,12 +462,32 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296501" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25239617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-    </layout>
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -466,116 +506,120 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../test_barry/yaroslav/bm_v3/app.rb">
+    <entry file="file://$PROJECT_DIR$/client/views/main/left_menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="5" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+        <state line="3" column="193" selection-start="386" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="270">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/main/left_menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="352" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="27" selection-start="298" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="9" selection-start="3250" selection-end="3250" vertical-scroll-proportion="0.0" vertical-offset="1384" max-vertical-offset="2430">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="60" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1728">
+          <folding>
+            <marker date="1399483156388" expanded="true" signature="1963:2061" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="4" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test_barry/yaroslav/bm_v3/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="5" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../test_barry/yaroslav/bm_v3/assets/javascripts/app/application.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="594">
-          <folding />
-        </state>
+        <state line="26" column="0" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="594" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../test_barry/yaroslav/bm_v3/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../test_barry/yaroslav/bm_v3/assets/javascripts/app/application.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <folding />
-        </state>
+        <state line="26" column="0" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../test_barry/yaroslav/bm_v3/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../test_barry/yaroslav/bm_v3/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="5" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.43909347" vertical-offset="291" max-vertical-offset="1350">
-          <folding />
-        </state>
+        <state line="42" column="5" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.43909347" vertical-offset="291" max-vertical-offset="1350" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/main/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="44" selection-start="633" selection-end="633" vertical-scroll-proportion="0.36627907" vertical-offset="0" max-vertical-offset="1032">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="19" selection-start="447" selection-end="447" vertical-scroll-proportion="0.39093485" vertical-offset="0" max-vertical-offset="3294">
-          <folding />
-        </state>
+        <state line="21" column="44" selection-start="633" selection-end="633" vertical-scroll-proportion="0.36627907" vertical-offset="0" max-vertical-offset="1032" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/friends.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7" selection-start="0" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
-          <folding />
-        </state>
+        <state line="0" column="7" selection-start="0" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/invites.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7" selection-start="0" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
-          <folding />
-        </state>
+        <state line="0" column="7" selection-start="0" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/walls.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="0" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/sessions/register.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="102" selection-start="452" selection-end="465" vertical-scroll-proportion="0.13597734" vertical-offset="0" max-vertical-offset="1059">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/sessions/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="78" selection-start="326" selection-end="326" vertical-scroll-proportion="0.10465116" vertical-offset="0" max-vertical-offset="1032">
-          <folding />
-        </state>
+        <state line="0" column="5" selection-start="0" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/main/header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="29" selection-end="109" vertical-scroll-proportion="0.016997168" vertical-offset="0" max-vertical-offset="1059">
-          <folding />
-        </state>
+        <state line="1" column="4" selection-start="29" selection-end="109" vertical-scroll-proportion="0.016997168" vertical-offset="0" max-vertical-offset="1059" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="450" selection-end="450" vertical-scroll-proportion="0.2549575" vertical-offset="0" max-vertical-offset="1296">
-          <folding />
-        </state>
+        <state line="15" column="12" selection-start="450" selection-end="450" vertical-scroll-proportion="0.2549575" vertical-offset="0" max-vertical-offset="1296" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.html">
@@ -587,21 +631,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/collections.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/conversations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="0" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
-          <folding />
-        </state>
+        <state line="0" column="13" selection-start="0" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/main/left_menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="193" selection-start="386" selection-end="403" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="270">
+        <state line="3" column="193" selection-start="386" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="270">
           <folding />
         </state>
       </provider>
@@ -622,35 +662,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../admin/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1548">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1548" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../admin/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="0" selection-start="3145" selection-end="4458" vertical-scroll-proportion="0.2181303" vertical-offset="1983" max-vertical-offset="3042">
-          <folding />
-        </state>
+        <state line="123" column="0" selection-start="3145" selection-end="4458" vertical-scroll-proportion="0.2181303" vertical-offset="1983" max-vertical-offset="3042" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/router.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="9" selection-start="3250" selection-end="3250" vertical-scroll-proportion="0.0" vertical-offset="1384" max-vertical-offset="2430">
+        <state line="53" column="4" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="1224">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="60" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1692">
+        <state line="54" column="94" selection-start="2059" selection-end="2059" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="1692">
+          <folding>
+            <marker date="1399483156388" expanded="true" signature="1963:2061" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2448">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/client/views/sessions/register.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="4" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.796034" vertical-offset="111" max-vertical-offset="1224">
+        <state line="6" column="23" selection-start="292" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/sessions/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="49" selection-start="939" selection-end="939" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/sessions/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="22" selection-start="35" selection-end="35" vertical-scroll-proportion="-2.8923514" vertical-offset="3081" max-vertical-offset="4140">
           <folding />
         </state>
       </provider>

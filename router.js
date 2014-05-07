@@ -44,6 +44,7 @@ Router.configure({
 });
 
 
+
 Router.onBeforeAction('loading');
 
 
@@ -118,7 +119,7 @@ Router.map(function() {
         path: ':_id',
         template: 'wall',
         waitOn: function(){
-            return [Meteor.subscribe('wall',this.params._id),Meteor.subscribe('user',this.params._id)];
+            return [Meteor.subscribe('one_my_invite',this.params._id),Meteor.subscribe('one_invite',this.params._id),Meteor.subscribe('one_friend',this.params._id),Meteor.subscribe('wallFiles',this.params._id), Meteor.subscribe('wall',this.params._id),Meteor.subscribe('user',this.params._id)];
         }
     });
 

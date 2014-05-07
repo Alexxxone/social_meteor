@@ -97,16 +97,63 @@ body{
 }
 
 /* MY WALL*/
-.avatar{
+.avatar, .def_avatar{
     height: 170px;
+    max-height: 170px;
+    max-width: 170px;
+}
+
+.avatar_box{
+    width: 173px;
+    height: 171px;
+    overflow: hidden;
 }
 .remove_image{
     position: relative;
-    left: -30px;
-    bottom: 35px;
+    left: 75px;
+    bottom: 27px;
+    transition: .5s;
+    opacity: .2;
 }
+.remove_image:hover{
+    opacity: 1;
+}
+
 .change_status_box_input{
     width: 85%;
+}
+.change_status{
+    cursor: pointer;
+}
+.my_avatar{
+    background-color: rgba(37, 37, 37, 0.57);
+    color: #FFF;
+    position: relative;
+    top: -16px;
+    height: 10px;
+    padding: 0 18px;
+    cursor: pointer;
+    transition: .3s;
+    opacity: .2;
+}
+.my_avatar:hover{
+    padding-bottom: 0.3em;
+    top: -25px;
+    opacity: 1;
+}
+.asAvatar{
+    position: relative;
+    top: -27px;
+    left: -28px;
+    transition: .5s;
+    opacity: .2;
+}
+.asAvatar:hover{
+    opacity: 1;
+}
+/* NOT MY WALL*/
+.user_wall_actions a{
+    cursor: pointer;
 }
 /* HEADER */
 .friends_search_list{
@@ -135,7 +182,7 @@ body{
 /* AVATAR MODAL*/
 #avatar_modal_wrapper{
     background-color: #7DB0B4;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: 9;

@@ -11,27 +11,29 @@
             </div>
         </div>
         {{#each files}}
-        <ul class="list">
-            <li>
-                {{#with progress}}
-                <div class="progress upload_progress">
-                    <div  role="progressbar" class="progress-bar bar {{barAStyle}}"  aria-valuenow="{{progressA}}%;" style="width: {{progressA}}%;">{{progressA}}%</div>
-                </div>
-                {{/with}}
-
-                <div class="btn-group-justified">
-                    <a class="btn btn-danger btn-sm deleteFile">Delete</a>
-                    <a class="btn btn-primary btn-sm asAvatar">As Avatar</a>
-                </div>
-
-                <img src="{{cfsFileUrl 'imageUrl'}}" alt="{{_id}}" >
-
-            </li>
-        </ul>
+            {{#if url store="images"}}
+                {{! if we have a url to the thumbnail store we will display the image}}
+                <img src="{{url store='images'}}" style="max-height: 150px;max-width: 200px">
+                <button class="btn btn-warning btn-xs remove_image">X</button>
+            {{else}}
+                <img src="/img/uploading.png"  style="max-height: 150px;max-width: 200px">
+                {{#unless isUploaded}}
+                    <div class="progress upload_progress">
+                        <div  role="progressbar" class="progress-bar bar bar-success"  aria-valuenow="{{uploadProgress}}%;" style="width: {{uploadProgress}}%;">{{uploadProgress}}%</div>
+                    </div>
+                {{else}}
+                    <p class="uploadProgress">processing..</p>
+                {{/unless}}
+         {{/if}}
         {{else}}
-
-        No files uploaded.
+            No Files was uploaded..
         {{/each}}
+
+<!--NEW-->
+
+
+
+
     </div>
 
 </template>
