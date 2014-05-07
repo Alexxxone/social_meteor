@@ -42,7 +42,7 @@ Template.my_audio.events({
     'click #stop-bt':function(){
         $("#audio-player")[0].pause();
         $("#audio-player")[0].currentTime = 0;
-        $("#message").text("Music Stopped");
+
     },
     'mouseenter .volumeSlider':function(){
         $('.volume_box').css('opacity',1);
@@ -51,15 +51,16 @@ Template.my_audio.events({
         $('.volume_box').css('opacity',0);
     },
     'click .play_progress':function(e){
-        var parentOffset = $(e.currentTarget).offset();
-        var relX = e.pageX - parentOffset.left;
         player = document.getElementById('audio-player');
-        var elapsedTime = Math.round(player.currentTime);
-        var fWidth = (elapsedTime / player.duration) * ($('.play_progress').width());
+        if(player.src){
+            var parentOffset = $(e.currentTarget).offset();
+            var relX = e.pageX - parentOffset.left;
 
-        new_width = (player.duration * (relX-5) ) / ($('.play_progress').width())
-        console.log(new_width);
-        player.currentTime = new_width;
+            var elapsedTime = Math.round(player.currentTime);
+            new_width = (player.duration * (relX-5) ) / ($('.play_progress').width());
+            console.log(new_width);
+            player.currentTime = new_width;
+        }
     }
 
 });
