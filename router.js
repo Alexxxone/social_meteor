@@ -113,7 +113,18 @@ Router.map(function() {
         }
     });
 
-
+    this.route("my_audio", {
+        path: "/my_audio",
+        template: 'my_audio',
+        waitOn: function(){
+            return Meteor.subscribe('myAudio');
+        },
+        data: {
+            audio: function(){
+                return  AudioFS.find();
+            }
+        }
+    });
 
     this.route("wall", {
         path: ':_id',

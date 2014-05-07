@@ -37,64 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="left_menu.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/main/left_menu.js">
+      <file leaf-file-name="left_menu.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/main/left_menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="20" selection-start="352" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="504">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chat.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/collections/chat.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="27" selection-start="298" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="288">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2448">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/sessions/register.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="292" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/sessions/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="49" selection-start="939" selection-end="939" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="1026">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/sessions/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="612">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="22" selection-start="35" selection-end="35" vertical-scroll-proportion="-2.8923514" vertical-offset="3081" max-vertical-offset="4140">
+            <state line="5" column="85" selection-start="735" selection-end="743" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="342">
               <folding />
             </state>
           </provider>
@@ -103,10 +49,47 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="94" selection-start="2059" selection-end="2059" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="1692">
+            <state line="85" column="23" selection-start="3163" selection-end="3170" vertical-scroll-proportion="0.0" vertical-offset="687" max-vertical-offset="1746">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_audio.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/audio/my_audio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="46" selection-start="587" selection-end="600" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="972">
               <folding>
-                <marker date="1399483156388" expanded="true" signature="1963:2061" placeholder="{...}" />
+                <element signature="n#style#0;n#img#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#template#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="250" column="1" selection-start="4178" selection-end="4178" vertical-scroll-proportion="0.0" vertical-offset="3495" max-vertical-offset="4608">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-ui-1.10.4.custom.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/assets/css/jquery-ui-1.10.4.custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="177" column="26" selection-start="4417" selection-end="4417" vertical-scroll-proportion="0.4739941" vertical-offset="2703" max-vertical-offset="9972">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_audio.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/audio/my_audio.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="47" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="2340">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,16 +97,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="4" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="1224">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conversations.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+            <state line="11" column="25" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
@@ -146,16 +120,23 @@
         <option value="$PROJECT_DIR$/../test_barry/yaroslav/bm_v3/assets/javascripts/app/application.coffee" />
         <option value="$PROJECT_DIR$/client/assets/css/responsive.css" />
         <option value="$PROJECT_DIR$/client/views/main/main.html" />
-        <option value="$PROJECT_DIR$/client/assets/css/custom.css" />
-        <option value="$PROJECT_DIR$/client/views/main/left_menu.html" />
         <option value="$PROJECT_DIR$/collections/chat.js" />
         <option value="$PROJECT_DIR$/client/views/main/left_menu.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/server/server.js" />
-        <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/client/views/sessions/register.coffee" />
         <option value="$PROJECT_DIR$/client/views/sessions/register.html" />
         <option value="$PROJECT_DIR$/client/views/sessions/login.html" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/collectionRules.js" />
+        <option value="$PROJECT_DIR$/client/views/wall/my_wall.js" />
+        <option value="$PROJECT_DIR$/client/views/pictures/avatar.html" />
+        <option value="$PROJECT_DIR$/client/views/main/left_menu.html" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/router.js" />
+        <option value="$PROJECT_DIR$/collections/audio.js" />
+        <option value="$PROJECT_DIR$/client/views/audio/my_audio.html" />
+        <option value="$PROJECT_DIR$/client/views/audio/my_audio.js" />
+        <option value="$PROJECT_DIR$/client/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/client/assets/css/jquery-ui-1.10.4.custom.css" />
       </list>
     </option>
   </component>
@@ -218,7 +199,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,6 +236,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wall" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,7 +283,113 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pictures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="people" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="conversations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social_meteor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,6 +422,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,6 +466,14 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/assets/js" />
+      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="$PROJECT_DIR$/client/assets/css" />
+      <recent name="$PROJECT_DIR$/collections" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -537,9 +644,7 @@
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="60" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1728">
-          <folding>
-            <marker date="1399483156388" expanded="true" signature="1963:2061" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -622,13 +727,6 @@
         <state line="15" column="12" selection-start="450" selection-end="450" vertical-scroll-proportion="0.2549575" vertical-offset="0" max-vertical-offset="1296" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/collections.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059" />
@@ -637,13 +735,6 @@
     <entry file="file://$PROJECT_DIR$/collections/conversations.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="13" selection-start="0" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/main/left_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="193" selection-start="386" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="270">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/main/left_menu.js">
@@ -670,39 +761,16 @@
         <state line="123" column="0" selection-start="3145" selection-end="4458" vertical-scroll-proportion="0.2181303" vertical-offset="1983" max-vertical-offset="3042" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/server/collectionRules.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="4" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="1224">
+        <state line="87" column="7" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.6090652" vertical-offset="921" max-vertical-offset="1998">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
+    <entry file="file://$PROJECT_DIR$/client/views/wall/my_wall.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="94" selection-start="2059" selection-end="2059" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="1692">
-          <folding>
-            <marker date="1399483156388" expanded="true" signature="1963:2061" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/sessions/register.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="292" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/sessions/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="49" selection-start="939" selection-end="939" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="1026">
+        <state line="20" column="5" selection-start="673" selection-end="673" vertical-scroll-proportion="0.33994335" vertical-offset="0" max-vertical-offset="1854">
           <folding />
         </state>
       </provider>
@@ -714,9 +782,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/pictures/modal_image.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/sessions/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="49" selection-start="939" selection-end="939" vertical-scroll-proportion="0.36627907" vertical-offset="0" max-vertical-offset="1032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/sessions/register.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="23" selection-start="292" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/conversations/conversations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/pictures/avatar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="27" selection-start="420" selection-end="1362" vertical-scroll-proportion="0.50581396" vertical-offset="0" max-vertical-offset="1032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/pictures/avatar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/main/left_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="85" selection-start="735" selection-end="743" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/audio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="44" selection-start="101" selection-end="101" vertical-scroll-proportion="0.06798867" vertical-offset="0" max-vertical-offset="1059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="7" selection-start="3552" selection-end="3552" vertical-scroll-proportion="0.6386233" vertical-offset="1600" max-vertical-offset="2646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="23" selection-start="3163" selection-end="3170" vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1746">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/audio/my_audio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="47" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="2340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/audio/my_audio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="46" selection-start="587" selection-end="600" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="972">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="35" selection-end="35" vertical-scroll-proportion="-2.8923514" vertical-offset="3081" max-vertical-offset="4140">
+        <state line="250" column="1" selection-start="4178" selection-end="4178" vertical-scroll-proportion="0.0" vertical-offset="3495" max-vertical-offset="4608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/css/jquery-ui-1.10.4.custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="26" selection-start="4417" selection-end="4417" vertical-scroll-proportion="0.4739941" vertical-offset="2703" max-vertical-offset="9972">
           <folding />
         </state>
       </provider>

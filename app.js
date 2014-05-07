@@ -9,7 +9,7 @@ if(Meteor.isClient){
         }
     });
 }
-
+UI._allowJavascriptUrls()
 
 Meteor.methods({
     set_counts: function (count) {

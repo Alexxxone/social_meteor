@@ -2,7 +2,6 @@
 //    return Conversations.find({ members: {$in: [this.userId] }}, {limit: 10, sort: {created_at: -1} });
 //});
 
-
 Meteor.publish("people", function() {
     return [ImagesFS.find({avatar:{$ne: false}}),Meteor.users.find({})];
 });
@@ -82,6 +81,10 @@ Meteor.publish("wallFiles", function(user_id) {
 });
 Meteor.publish("myFiles", function() {
     return ImagesFS.find({ owner: this.userId });
+});
+
+Meteor.publish("myAudio", function() {
+    return AudioFS.find({ owner: this.userId });
 });
 
 FS.HTTP.publish(ImagesFS, function () {

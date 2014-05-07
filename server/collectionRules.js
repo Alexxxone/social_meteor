@@ -81,11 +81,23 @@ ImagesFS.allow({
     },
 
     update: function(userId, file, fields, modifier) {
-        return true;
+        return userId && file.owner === userId;
     },
     remove: function(userId, file) {return userId && file.owner === userId; }
 });
+AudioFS.allow({
+    download: function(){
+        return true;
+    },
+    insert: function(userId, file) {
+        return true;
+    },
 
+    update: function(userId, file, fields, modifier) {
+        return userId && file.owner === userId;
+    },
+    remove: function(userId, file) {return userId && file.owner === userId; }
+});
 FS.HTTP.setHeadersForGet([
     ['Cache-Control', 'public, max-age=31536000']
 ]);

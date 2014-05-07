@@ -1,6 +1,6 @@
 Template.my_wall.helpers({
     wallImages:function(){
-        return ImagesFS.find({},{limit:3, sort:{uploadedAt: -1}});
+        return ImagesFS.find({owner: Meteor.userId()},{limit:3, sort:{uploadedAt: -1}});
     },
     on_mind: function(on_mind){
         if(on_mind && on_mind.length){
