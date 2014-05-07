@@ -6,7 +6,17 @@
 Meteor.publish("people", function() {
     return Meteor.users.find({});
 });
+Meteor.publish("unreaded_chat", function() {
+    conv = Conversations.find({members: this.userId});
+    conv_ids = _.pluck(conv.fetch(),'_id');
+    total_count = Chat.find({$and: [{conv_id: {$in: conv_ids }},{readed: false},{sender: {$ne: this.userId }}]}).count();
+    console.log(total_count);
+    Meteor.call('set_counts',total_count,function(e,s){
+        console.log(e,s);
+    });
 
+    return Chat.find({$and: [{conv_id: {$in: conv_ids }},{readed: false},{sender: {$ne: this.userId }}]});
+});
 
 
 
@@ -31,7 +41,6 @@ Meteor.publish("invites", function() {
 
 
 Meteor.publish("conversations", function() {
-    conversations = Conversations.find({members: this.userId});
     return Conversations.find({members: this.userId});
 });
 
@@ -43,6 +52,8 @@ Meteor.publish("conversation", function(friend_id) {
     return Conversations.find({ members:  { $all : [ this.userId, friend_id ] } });
 });
 Meteor.publish("chat", function(friend_id) {
+    var ids = _.pluck(Chat.find({sender: {$ne: this.userId }}).fetch(),'_id');
+    Chat.update({_id:  ids },{$set:{readed: true}});
     conv_id = Conversations.findOne({ members:  { $all : [ this.userId, friend_id ] } })._id;
     return Chat.find({conv_id: conv_id});
 });

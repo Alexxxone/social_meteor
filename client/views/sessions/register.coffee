@@ -6,7 +6,7 @@
       confirmation = t.find('#confirmation_account-password').value
       name = t.find('#account-name').value
       if confirmation is password and name isnt ''
-        Accounts.createUser email : email, password : password, profile: name : name  , (err)->
+        Accounts.createUser email : email, password : password, profile: { name : name , locked_screen: false , avatar: '' }, (err)->
           if err
             console.log(err)
           else
