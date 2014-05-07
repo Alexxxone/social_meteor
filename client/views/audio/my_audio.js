@@ -55,10 +55,7 @@ Template.my_audio.events({
         if(player.src){
             var parentOffset = $(e.currentTarget).offset();
             var relX = e.pageX - parentOffset.left;
-
-            var elapsedTime = Math.round(player.currentTime);
             new_width = (player.duration * (relX-5) ) / ($('.play_progress').width());
-            console.log(new_width);
             player.currentTime = new_width;
         }
     }
@@ -68,12 +65,6 @@ Template.my_audio.events({
 Template.my_audio.helpers({
     audio: function(){
         return AudioFS.find();
-    },
-    playProgress: function(){
-        player = document.getElementById('audio-player');
-        if(player)
-            return player.currentTime;
-
     }
 });
 Template.my_audio.rendered = function(){
@@ -104,6 +95,16 @@ Template.my_audio.rendered = function(){
         var min = 0;
         var sec = 0;
         if (progress) {
+
+            if(player.currentTime == player.duration){
+                song = $('.currentMusic').next();
+                $('.currentMusic').removeClass('currentMusic');
+                player.src = song.attr('name');
+                player.play();
+                song.addClass('currentMusic');
+                $('.songName').text(song.text().split('.mp3')[0]);
+                progress.width(0);
+            }
             var fWidth = (elapsedTime / player.duration) * (progress.parents('.play_progress').width());
             if (fWidth > 0) {
                 progress.width(fWidth);
