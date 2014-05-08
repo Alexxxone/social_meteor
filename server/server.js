@@ -2,7 +2,6 @@
 //    return Conversations.find({ members: {$in: [this.userId] }}, {limit: 10, sort: {created_at: -1} });
 //});
 
-
 Meteor.publish("people", function() {
     return [ImagesFS.find({avatar:{$ne: false}}),Meteor.users.find({})];
 });
@@ -17,7 +16,17 @@ Meteor.publish("one_my_invite", function(friend_id) {
 Meteor.publish("one_invite", function(friend_id) {
     return Invites.find({$and:[{receiver: this.userId},{sender: friend_id}]});
 });
+Meteor.publish("unreaded_chat", function() {
+    conv = Conversations.find({members: this.userId});
+    conv_ids = _.pluck(conv.fetch(),'_id');
+    total_count = Chat.find({$and: [{conv_id: {$in: conv_ids }},{readed: false},{sender: {$ne: this.userId }}]}).count();
+    console.log(total_count);
+    Meteor.call('set_counts',total_count,function(e,s){
+        console.log(e,s);
+    });
 
+    return Chat.find({$and: [{conv_id: {$in: conv_ids }},{readed: false},{sender: {$ne: this.userId }}]});
+});
 
 
 
@@ -42,7 +51,6 @@ Meteor.publish("invites", function() {
 
 
 Meteor.publish("conversations", function() {
-    conversations = Conversations.find({members: this.userId});
     return  [ImagesFS.find({avatar:{$ne: false}}),Conversations.find({members: this.userId})];
 });
 
@@ -54,6 +62,8 @@ Meteor.publish("conversation", function(friend_id) {
     return  [ImagesFS.find({avatar:{$ne: false}}),Conversations.find({ members:  { $all : [ this.userId, friend_id ] } })];
 });
 Meteor.publish("chat", function(friend_id) {
+    var ids = _.pluck(Chat.find({sender: {$ne: this.userId }}).fetch(),'_id');
+    Chat.update({_id:  ids },{$set:{readed: true}});
     conv_id = Conversations.findOne({ members:  { $all : [ this.userId, friend_id ] } })._id;
     return Chat.find({conv_id: conv_id});
 });
@@ -73,6 +83,12 @@ Meteor.publish("myFiles", function() {
     return ImagesFS.find({ owner: this.userId });
 });
 
+Meteor.publish("myAudio", function() {
+    return AudioFS.find({ owner: this.userId });
+});
+Meteor.publish("peopleAudio", function(userId) {
+    return AudioFS.find({ owner: userId });
+});
 FS.HTTP.publish(ImagesFS, function () {
     return ImagesFS.find();
 });

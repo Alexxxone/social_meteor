@@ -9,16 +9,45 @@ Router.configure({
 
     before: function() {
         $('.friends_search_list').addClass('slow_hidden');
-//        this.subscribe('friends');
-        if (!Meteor.userId() && this.route.name != 'register' && this.route.name != 'login') {
-            return Router.go('login');
+        if(!Meteor.userId() && this.route.name != 'register' && this.route.name != 'login') {
+            Router.go('login');
+        }else if( Meteor.user() && Meteor.user().profile.locked_screen && this.route.name != 'locked_screen' && this.route.name != 'register' && this.route.name != 'login' ){
+            Router.go('locked_screen');
+        }else{
+            return [
+                this.subscribe('friends').wait(),
+                this.subscribe('my_invites').wait(),
+                this.subscribe('invites').wait(),
+                this.subscribe('unreaded_chat').wait()
+
+            ];
+
         }
-        if (Meteor.userId() && Meteor.user().profile.locked_screen && this.route.name != 'locked_screen' && this.route.name != 'register' && this.route.name != 'login'){
-            return Router.go('locked_screen');
+    },
+    data: {
+        my_friends: function(){
+            friends = Friends.find({members: Meteor.userId() });
+            my_friends =   _.flatten(_.pluck(friends.fetch(),'members'));
+            return Meteor.users.find({$and:[{_id: { $in: my_friends } }, {_id: {$ne: Meteor.userId()}}] });
+        },
+        my_invites: function(){
+            invites = Invites.find({sender: Meteor.userId() });
+            my_invites = _.pluck(invites.fetch(),'receiver');
+            return Meteor.users.find({_id: { $in: my_invites } });
+        },
+        invites: function(){
+            invites = Invites.find({receiver: Meteor.userId() });
+            my_invites = _.pluck(invites.fetch(),'sender');
+            return Meteor.users.find({_id: { $in: my_invites } });
         }
     }
 });
+
+
+
 Router.onBeforeAction('loading');
+
+
 Router.map(function() {
     this.route("home", {
         path: '/',
@@ -53,27 +82,8 @@ Router.map(function() {
         }
     });
     this.route("friends", {
-        path: "/friends",
-        waitOn: function(){
-            return [Meteor.subscribe('friends'),Meteor.subscribe('my_invites'),Meteor.subscribe('invites')];
-        },
-        data: {
-            my_friends: function(){
-                friends = Friends.find({members: Meteor.userId() });
-                my_friends =   _.flatten(_.pluck(friends.fetch(),'members'));
-                return Meteor.users.find({$and:[{_id: { $in: my_friends } }, {_id: {$ne: Meteor.userId()}}] });
-            },
-            my_invites: function(){
-                invites = Invites.find({sender: Meteor.userId() });
-                my_invites = _.pluck(invites.fetch(),'receiver');
-                return Meteor.users.find({_id: { $in: my_invites } });
-            },
-            invites: function(){
-                invites = Invites.find({receiver: Meteor.userId() });
-                my_invites = _.pluck(invites.fetch(),'sender');
-                return Meteor.users.find({_id: { $in: my_invites } });
-            }
-        }
+        path: "/friends"
+
     });
 
     this.route("conversations", {
@@ -102,6 +112,32 @@ Router.map(function() {
             }
         }
     });
+
+    this.route("my_audio", {
+        path: "/my_audio",
+        template: 'my_audio',
+        waitOn: function(){
+            return Meteor.subscribe('myAudio');
+        },
+        data: {
+            audio: function(){
+                return  AudioFS.find();
+            }
+        }
+    });
+    this.route("peopleAudio", {
+        path: ":_id/audio",
+        template: 'peopleAudio',
+        waitOn: function(){
+            return Meteor.subscribe('peopleAudio');
+        },
+        data: {
+            audio: function(){
+                return  AudioFS.find();
+            }
+        }
+    });
+
 
 
 
