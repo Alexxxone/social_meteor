@@ -28,7 +28,6 @@ Template.conversations.events({
                 right_id = v;
             }
         });
-        console.log(right_id,Meteor.userId());
        Router.go('conversation',{_id: right_id});
     }
 });
