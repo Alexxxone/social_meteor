@@ -75,6 +75,7 @@ Template.my_audio.rendered = function(){
         if (progress) {
 
             if(player.currentTime == player.duration){
+                $('.current_playTime').text('')
                 song = $('.currentMusic').next();
                 $('.currentMusic').removeClass('currentMusic');
                 player.src = song.attr('name');
@@ -82,6 +83,7 @@ Template.my_audio.rendered = function(){
                 song.addClass('currentMusic');
                 $('.songName').text(song.text().split('.mp3')[0]);
                 progress.width(0);
+
             }
             var fWidth = (elapsedTime / player.duration) * (progress.parents('.play_progress').width());
             if (fWidth > 0) {
@@ -103,68 +105,4 @@ Template.my_audio.rendered = function(){
 
 };
 
-Player = {
-    player: function(){
-        return document.getElementById('audio-player')
-    },
-    progressBox: $('.play_progress'),
-    progressBar: $('.play_progress div'),
 
-    currentSong_Name: false,
-    mark_selected: function(target){
-        $('.select_song.currentMusic').removeClass('currentMusic');
-        target.addClass('currentMusic');
-    },
-    set_songName: function(name){
-        this.currentSong_Name = name;
-        $('.songName').text(name);
-    },
-    set_songUrl: function(url){
-       this.player().src = url;
-    },
-
-    play_btn: function(){
-        if(!this.player().src){
-            var song = $('.select_song:first');
-            var new_url  = song.attr('name');
-            var new_name = song.text();
-            this.select_song(new_url,new_name,song);
-        }else{
-            this.play();
-        }
-    },
-    play: function(){
-        $('.play-bt').attr('class','pause-bt').find('i').attr('class','fa fa-pause fa-fw');
-        this.player().play();
-    },
-
-    stop: function(){
-        this.player().pause();
-        this.player().currentTime = 0;
-    },
-
-    pause: function(){
-        $('.pause-bt').attr('class','play-bt').find('i').attr('class','fa fa-play fa-fw');
-        this.player().pause();
-    },
-
-    progress: function(){
-
-    },
-
-    select_song: function(url,name,target){
-        this.set_songName(name.split('.mp3')[0]);
-        this.set_songUrl(url);
-        this.play();
-        this.mark_selected(target);
-    },
-    scroll: function(target){
-        if(this.player.src){
-            var parentOffset = target.offset();
-            var relX = e.pageX - parentOffset.left;
-            var new_width = (player.duration * (relX-5) ) / (target.width());
-            player.currentTime = new_width;
-        }
-    }
-
-};

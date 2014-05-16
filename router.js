@@ -8,6 +8,7 @@ Router.configure({
     },
 
     before: function() {
+        this.subscribe('myAudio').wait();
         $('.friends_search_list').addClass('slow_hidden');
         if(!Meteor.userId() && this.route.name != 'register' && this.route.name != 'login') {
             Router.go('login');
@@ -116,9 +117,6 @@ Router.map(function() {
     this.route("my_audio", {
         path: "/my_audio",
         template: 'my_audio',
-        waitOn: function(){
-            return Meteor.subscribe('myAudio');
-        },
         data: {
             audio: function(){
                 return  AudioFS.find();
