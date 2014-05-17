@@ -5,6 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="bm_v3" />
+    <orderEntry type="module" module-name="scott_test" />
   </component>
 </module>
 
