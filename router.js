@@ -8,6 +8,9 @@ Router.configure({
     },
 
     before: function() {
+        Session.set('audio_search',false);
+        Session.set('wall_sort',false);
+        Session.set('friend_audio',false);
         this.subscribe('myAudio').wait();
         $('.friends_search_list').addClass('slow_hidden');
         if(!Meteor.userId() && this.route.name != 'register' && this.route.name != 'login') {
@@ -117,10 +120,10 @@ Router.map(function() {
     this.route("my_audio", {
         path: "/my_audio",
         template: 'my_audio',
-        data: {
-            audio: function(){
-                return  AudioFS.find();
-            }
+        yieldTemplates: {
+            'header': { to: 'header' },
+            'left_menu': { to: 'left_menu' },
+            'friends_audio': {to: 'right_menu'}
         }
     });
     this.route("peopleAudio", {
@@ -140,9 +143,10 @@ Router.map(function() {
 
 
     this.route("wall", {
-        path: ':_id',
+        path: 'friend/:_id',
         template: 'wall',
         waitOn: function(){
+            console.log(this.params._id);
             return [Meteor.subscribe('one_my_invite',this.params._id),Meteor.subscribe('one_invite',this.params._id),Meteor.subscribe('one_friend',this.params._id),Meteor.subscribe('wallFiles',this.params._id), Meteor.subscribe('wall',this.params._id),Meteor.subscribe('user',this.params._id)];
         }
     });

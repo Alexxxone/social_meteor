@@ -32,23 +32,38 @@ Template.header.events({
     },
     'click .prev-bt': function(){
         Player.prev();
+    },
+    'mouseenter .volumeSlider':function(){
+        $('.volume_box').css('opacity',1);
+    },
+    'mouseleave .volumeSlider':function(){
+        $('.volume_box').css('opacity',0);
+    },
+    'click .play_progress':function(e){
+        Player.scroll($(e.currentTarget), e.pageX);
     }
+
 });
 
 Template.header.friends = function(){
-    friends = Friends.find({members: Meteor.userId() });
-    my_friends =   _.flatten(_.pluck(friends.fetch(),'members'));
-    return Meteor.users.find({$and:[{_id: { $in: my_friends } }, {_id: {$ne: Meteor.userId()}}] });
+//    friends = Friends.find({members: Meteor.userId() });
+//    my_friends =   _.flatten(_.pluck(friends.fetch(),'members'));
+//    return Meteor.users.find({$and:[{_id: { $in: my_friends } }, {_id: {$ne: Meteor.userId()}}] });
 };
 
 Template.header.rendered = function(){
+    Meteor.defer(function() {
+        Player.user_id = Meteor.userId();
+        Player.player().addEventListener("timeupdate", Player.progress, true);
+    });
+
     $( ".volumeSlider" ).slider({
         range: "max",
         min: 0,
         max: 10,
         value: 10,
         slide: function( event, ui ) {
-            player.volume = ui.value/10;
+            Player.player().volume = ui.value/10;
             $(".currentVolume").text( ui.value );
         }
     });

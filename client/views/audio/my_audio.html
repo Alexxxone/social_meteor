@@ -8,31 +8,11 @@
         </div>
     </div>
     <input type="text" class="search_song form-control" placeholder="Search">
-
-<!--PLAYER AND VOLUME-->
-
-    <p><span class="songName"></span><span class="current_playTime pull-right"></span></p>
-    <div class="row">
-        <div class="col-lg-10">
-            <div class="progress play_progress">
-                <div  role="progressbar" class="progress-bar bar bar-success"></div>
-            </div>
-        </div>
-        <div class="col-lg-2">
-            <p class="volume_box">Volume <span class="currentVolume">10</span></p>
-            <div class="volumeSlider"></div>
-        </div>
-    </div>
-
-<!-- PLAYER BUTTONS-->
-    <a class="play-bt" href="#"><i class="fa fa-play fa-fw"></i></a> |
-    <a class="stop-bt" href="#"><i class="fa fa-stop fa-fw"></i></a>
     <hr>
-
 <!-- AUDIO FILES-->
     {{#each audio}}
         {{#if url store="audio"}}
-            <p class="select_song" name="{{url store='audio'}}">{{name}}  <span class="pull-right remove_audio">x</span></p>
+            <p class="select_song" id="{{_id}}" name="{{url store='audio'}}">{{name}} {{uploadedAt}}  <span class="pull-right remove_audio">x</span></p>
 
         {{else}}
             <img src="/img/uploading.png"  style="max-height: 150px;max-width: 200px">

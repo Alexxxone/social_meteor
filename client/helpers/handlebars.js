@@ -22,14 +22,12 @@ Handlebars.registerHelper('emails_address', function(emails) {
 });
 Handlebars.registerHelper('avatar_url', function(user_id) {
     if(ImagesFS.findOne({owner:user_id})){
-        console.log(ImagesFS.findOne({owner:user_id}).url({storage: 'images'}));
         return ImagesFS.findOne({owner:user_id}).url({storage: 'images'});
     }
 
      return '/img/deactivated_100.gif';
 });
 Handlebars.registerHelper('last_message_exist', function(last) {
-    console.log(last);
     if(last){
         return  true;
     }else{

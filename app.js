@@ -11,46 +11,79 @@ if(Meteor.isClient){
 
 
     Player = {
+        index: 0,
+        user_id: Meteor.userId(),
         playList: function(){
-            return _.pluck(AudioFS.find({}, {fields: {_id: 1}}).fetch(),'_id');
+            return AudioFS.find({owner: this.user_id},{sort:{uploadedAt: 1}}).fetch();
         },
-        current_song: {
-            song: false
-            ,
-            get: function(){
-               return this.song;
-            },
-            set: function(_id){
-                this.song = AudioFS.findOne({_id: _id});
+        set_index: function(_id){
+            var that = this;
+            this.playList().forEach(function(v,i){
+                if(v._id == _id){
+                    that.current_index().set(i);
+                }
+            });
+        },
+        used_ids: [],
+        first: function(){
+            return this.playList()[this.playList.length-1];
+        },
+
+        current_index: function(){
+            var that = this;
+            return {
+                next: function(){
+                    if(that.index == 0){
+                        this.set(that.playList().length-1);
+                        that.used_ids = [];
+                    }else{
+                        that.index--;
+                    }
+                },
+                prev: function(){
+                    if(that.index == that.playList().length-1){
+                        this.set(0);
+                    }else{
+                        that.index++;
+                    }
+                },
+                set: function(ind){
+                   that.index = ind;
+                   this.get();
+                },
+                get: function(){
+                    if(that.used_ids.length == 0){
+                        that.index = that.playList().length-1;
+                    }
+                    return that.index;
+                }
             }
         },
-        current_index: 0,
         next: function(){
-            audio = AudioFS.findOne(this.playList()[this.current_index]);
-            this.current_song.set(audio._id);
-            this.select_song(audio.url(),audio.name(),false);
-            this.current_index++;
+            this.current_index().next();
+            var song = this.playList()[this.current_index().get()];
+            this.used_ids.push(song._id);
+
+            var target = $('.select_song[name="'+song.url()+'&store=audio"]');
+
+            this.select_song(song.url(),song.name(),target);
         },
         prev: function(){
-            this.current_index-=1;
-            audio = AudioFS.findOne(this.playList()[this.current_index]);
-            this.current_song.set(audio._id);
-            this.select_song(audio.url(),audio.name(),false);
+            this.current_index().prev();
+            var song = this.playList()[this.current_index().get()];
+            this.used_ids.push(song._id);
+            var target = $('.select_song#'+song._id);
+            this.select_song(song.url(),song.name(),target);
 
         },
         player: function(){
             return document.getElementById('audio-player')
         },
-        progressBox: $('.play_progress'),
-        progressBar: $('.play_progress div'),
-
-        currentSong_Name: false,
         mark_selected: function(target){
             $('.select_song.currentMusic').removeClass('currentMusic');
             target.addClass('currentMusic');
         },
         set_songName: function(name){
-            this.currentSong_Name = name;
             $('.songName').text(name);
         },
         set_songUrl: function(url){
@@ -59,10 +92,7 @@ if(Meteor.isClient){
 
         play_btn: function(){
             if(!this.player().src){
-                var song = $('.select_song:first');
-                var new_url  = song.attr('name');
-                var new_name = song.text();
-                this.select_song(new_url,new_name,song);
+                this.next();
             }else{
                 this.play();
             }
@@ -73,7 +103,7 @@ if(Meteor.isClient){
         },
 
         stop: function(){
-            this.player().pause();
+            this.pause();
             this.player().currentTime = 0;
         },
 
@@ -81,8 +111,33 @@ if(Meteor.isClient){
             $('.pause-bt').attr('class','play-bt').find('i').attr('class','fa fa-play fa-fw');
             this.player().pause();
         },
-
         progress: function(){
+            var player = this;
+            var elapsedTime = Math.round(player.currentTime);
+            var progress  = $('.play_progress div');
+            var playTime = $('.current_playTime');
+            var min = 0;
+            var sec = 0;
+            if(progress){
+                if(player.currentTime == player.duration){
+                    Player.next();
+                    progress.width(0);
+                }
+                var fWidth = (elapsedTime / this.duration ) * (progress.parents('.play_progress').width());
+                if (fWidth > 0) {
+                    progress.width(fWidth);
+                    if(elapsedTime>60 && elapsedTime<120){
+                        min = 1;
+                        sec = parseInt(elapsedTime) - 60;
+                    }else if(elapsedTime>120 && elapsedTime<180){
+                        min = 2;
+                        sec = parseInt(elapsedTime) - 120;
+                    }else{
+                        sec = elapsedTime;
+                    }
+                    playTime.text(min+ ':' +sec);
+                }
+            }
 
         },
 
@@ -93,18 +148,18 @@ if(Meteor.isClient){
             if(target)
                 this.mark_selected(target);
         },
-        scroll: function(target){
-            if(this.player.src){
-                var parentOffset = target.offset();
-                var relX = e.pageX - parentOffset.left;
-                var new_width = (player.duration * (relX-5) ) / (target.width());
-                player.currentTime = new_width;
+        scroll: function(target,pageX){
+            if(this.player().src){
+                var parentOffset = $('.play_progress').offset();
+                var relX = pageX - parentOffset.left;
+                var new_width = (this.player().duration * (relX-5) ) / (target.width());
+                this.player().currentTime = new_width;
             }
         }
 
     };
 }
-UI._allowJavascriptUrls()
+UI._allowJavascriptUrls();
 
 Meteor.methods({
     set_counts: function (count) {

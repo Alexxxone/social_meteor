@@ -38,7 +38,7 @@ body{
     margin-top: 20px;
 }
 .header_audio_progress_bar{
-    width: 200px;
+    width: 539px;
     padding: 15px 0;
     height: 20px;
 
@@ -57,8 +57,8 @@ body{
     color:white;
     padding-top: 10px;
     padding-right: 10px;
-    max-width: 208px;
-    min-width: 208px;
+    max-width: 250px;
+    min-width: 250px;
     overflow: hidden;
 }
 
@@ -276,6 +276,23 @@ body{
     margin-top: 5px;
     margin-bottom: 20px;
 }
+
+
+/*  MY MUSIC  */
+
+.friend_audio_box{
+    display: table;
+    padding: 5px;
+    width: 263px;
+}
+.friend_audio_box:hover{
+    background-color: #d3d3d3;
+}
+.friend_audio_box span{
+    margin-left: 10px;
+    cursor: default;
+}
+
 .volume_box{
     transition:.3s;
     opacity: 0;
