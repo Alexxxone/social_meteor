@@ -142,7 +142,8 @@ if(Meteor.isClient){
         chanels: [
             {name:'MFM Online',url: 'http://radio.mfm.ua:8080/online128'},
             {name:'Sky.FM:: Smooth Jazz',url:'http://pub3.sky.fm/sky_smoothjazz'},
-            {name:'Zaycev.FM:: RNB',url:'http://www.zaycev.fm:9001/rnb/ZaycevFM(128)'}
+            {name:'Zaycev.FM:: RNB',url:'http://www.zaycev.fm:9001/rnb/ZaycevFM(128)'},
+            {name:'Те кто с нами',url:'http://cs1-49v4.vk.me/p1/06341390c1a454.mp3'}
         ],
         radio: function(chanel){
             this.select_song(chanel.url,chanel.name,false);
