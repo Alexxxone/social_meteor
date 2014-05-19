@@ -52,6 +52,18 @@ Template.header.friends = function(){
 };
 
 Template.header.rendered = function(){
+    Player.player().addEventListener("loadeddata", function(){
+       Player.loadeddata();
+    });
+    Player.player().addEventListener("loadstart", function(){
+        Player.loadstart();
+    });
+    Player.player().addEventListener("progress", function(e,v)
+        {
+//           console.log('progress', e.timeStamp);
+        }
+    );
+
     Meteor.defer(function() {
         Player.user_id = Meteor.userId();
         Player.player().addEventListener("timeupdate", Player.progress, true);

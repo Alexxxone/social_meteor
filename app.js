@@ -63,9 +63,7 @@ if(Meteor.isClient){
             this.current_index().next();
             var song = this.playList()[this.current_index().get()];
             this.used_ids.push(song._id);
-
             var target = $('.select_song[name="'+song.url()+'&store=audio"]');
-
             this.select_song(song.url(),song.name(),target);
         },
         prev: function(){
@@ -77,19 +75,20 @@ if(Meteor.isClient){
 
         },
         player: function(){
-            return document.getElementById('audio-player')
+            return document.getElementById('audio-player');
         },
         mark_selected: function(target){
             $('.select_song.currentMusic').removeClass('currentMusic');
             target.addClass('currentMusic');
         },
+        songName: '',
         set_songName: function(name){
+            this.songName = name;
             $('.songName').text(name);
         },
         set_songUrl: function(url){
             this.player().src = url;
         },
-
         play_btn: function(){
             if(!this.player().src){
                 this.next();
@@ -140,7 +139,21 @@ if(Meteor.isClient){
             }
 
         },
-
+        chanels: [
+            {name:'MFM Online',url: 'http://radio.mfm.ua:8080/online128'},
+            {name:'Sky.FM:: Smooth Jazz',url:'http://pub3.sky.fm/sky_smoothjazz'},
+            {name:'Zaycev.FM:: RNB',url:'http://www.zaycev.fm:9001/rnb/ZaycevFM(128)'}
+        ],
+        radio: function(chanel){
+            this.select_song(chanel.url,chanel.name,false);
+        },
+        loadeddata: function(){
+            $('.show_player').html('Show Player <i class="fa fa-play fa-fw"></i>');
+            $('.songName').text(this.songName);
+        },
+        loadstart: function(){
+            $('.show_player, .songName').text('loading...');
+        },
         select_song: function(url,name,target){
             this.set_songName(name.split('.mp3')[0]);
             this.set_songUrl(url);
