@@ -11,11 +11,12 @@ Template.left_menu.helpers({
         if(Router.current().path == path){
             return 'active';
         }
-
-    },messages_count: function(){
-        return Chat.find().count();
+    },
+    notifications: function(){
+        return Notifications.findOne();
     },
     invitations_count: function(){
+//        Notifications.findOne().request;
         return Invites.find({receiver: Meteor.userId() }).count();
     }
 

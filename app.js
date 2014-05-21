@@ -175,14 +175,7 @@ if(Meteor.isClient){
 }
 UI._allowJavascriptUrls();
 
-Meteor.methods({
-    set_counts: function (count) {
-        Meteor.counters = {
-            counter: count
-        };
-        return Meteor.counters;
-    }
-});
+
 
 Before = {
     load: function(){

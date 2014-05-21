@@ -3,6 +3,7 @@
 //});
 
 Meteor.publish("people", function() {
+
     return [ImagesFS.find({avatar:{$ne: false}}),Meteor.users.find({})];
 });
 
@@ -16,16 +17,12 @@ Meteor.publish("one_my_invite", function(friend_id) {
 Meteor.publish("one_invite", function(friend_id) {
     return Invites.find({$and:[{receiver: this.userId},{sender: friend_id}]});
 });
-Meteor.publish("unreaded_chat", function() {
-    conv = Conversations.find({members: this.userId});
-    conv_ids = _.pluck(conv.fetch(),'_id');
-    total_count = Chat.find({$and: [{conv_id: {$in: conv_ids }},{readed: false},{sender: {$ne: this.userId }}]}).count();
-    console.log(total_count);
-    Meteor.call('set_counts',total_count,function(e,s){
-        console.log(e,s);
-    });
+Meteor.publish("notifications", function() {
+    if(!Notifications.findOne({owner: this.userId})){
+        Notifications.insert({owner: this.userId, chat: 0, request: 0});
+    }
 
-    return Chat.find({$and: [{conv_id: {$in: conv_ids }},{readed: false},{sender: {$ne: this.userId }}]});
+    return  Notifications.find({owner: this.userId}); ;
 });
 
 
@@ -51,6 +48,8 @@ Meteor.publish("invites", function() {
 
 
 Meteor.publish("conversations", function() {
+//    Chat.remove({});
+//    Notifications.remove({});
     return  [ImagesFS.find({avatar:{$ne: false}}),Conversations.find({members: this.userId})];
 });
 

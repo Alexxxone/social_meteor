@@ -3,11 +3,9 @@
 Template.conversation.events({
     'click .send_message':function(){
         chat_body = $('.chat_body');
-        Meteor.call('new_chat',chat_body.val(),Template.conversation.conv()._id);
+        Meteor.call('new_chat',chat_body.val(),Template.conversation.conv()._id,currentProfile()._id);
         scrollToBottom();
-        chat_body.val('');
         $("div#conversation_box .row .col-lg-7 p").emotions();
-
     },
     'click #smilesBtn': function(){
         $("#smilesChoose").toggle();
@@ -21,14 +19,17 @@ Template.conversation.events({
 });
 Template.conversations.events({
     'click':function(){
-       members = this.members;
-       var right_id;
+        Meteor.call('read_chat',this._id,function(e,v){
+            console.log(e,v);
+        });
+        members = this.members;
+        var right_id;
         $.each(members, function(i,v){
             if(v != Meteor.userId()){
                 right_id = v;
             }
         });
-       Router.go('conversation',{_id: right_id});
+        Router.go('conversation',{_id: right_id});
     }
 });
 
@@ -42,7 +43,6 @@ Template.conversations.rendered = function(){
 };
 
 Template.conversation.rendered = function(){
-
     Meteor.setTimeout(function() {
         $('#conversation_box').slimScroll({height: '700px',start: 'bottom'});
 
@@ -63,4 +63,8 @@ function scrollToBottom(){
 
 Template.conversation.conv =  function(){
     return Conversations.findOne();
+};
+
+currentProfile = function(){
+ return Meteor.users.findOne(Router.current().params._id);
 };

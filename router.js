@@ -22,7 +22,7 @@ Router.configure({
                 this.subscribe('friends').wait(),
                 this.subscribe('my_invites').wait(),
                 this.subscribe('invites').wait(),
-                this.subscribe('unreaded_chat').wait()
+                this.subscribe('notifications').wait()
 
             ];
 
