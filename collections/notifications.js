@@ -3,21 +3,27 @@ Notifications = new Meteor.Collection("notifications");
 Meteor.methods({
     read_chat: function(conv_id){
 
-        var readed_count =  Chat.find({$and: [{conv_id: conv_id},{receiver: Meteor.userId()},{ readed: false } ]}).count();
-        if(readed_count != 0){
-            Notifications.update({owner: Meteor.userId()},{$inc:{chat: -readed_count}});
+        var not_readed_count =  Chat.find({conv_id: conv_id, receiver: Meteor.userId()},{ readed: false } ).count();
+        if(not_readed_count != 0){
+            Notifications.remove({receiver: Meteor.userId(),conv_id:conv_id});
         }
-        Chat.update({$and: [{conv_id: conv_id},{receiver: Meteor.userId()},{readed: false} ]},{$set:{readed: true}}, {multi: true});
-        return [readed_count,conv_id];
-    },
-    notification_chat_add: function(receiver){
-        Notifications.update({owner: receiver}, {$inc: {chat: 1}});
+        Chat.update({conv_id: conv_id ,receiver: Meteor.userId() , readed: false} ,{$set:{readed: true}},{multi: true});
+        return [not_readed_count,conv_id];
     }
-
-
-
-
 });
+
+    Notifications.find().observeChanges({
+        added: function(id, notif) {
+            if(notif.receiver == Meteor.userId() ){
+                if(Router.current().route.name != "conversation" || ( Router.current().route.name == "conversation" && Router.current().params._id != notif.sender) ){
+                    Meteor.call('notify','<a href="/conversations/'+notif.sender+'">'+notif.message+'</a>', 'Info');
+                    console.log('Notifications ADDED',notif);
+                }
+            }
+        }
+    });
+
+
 
 
 

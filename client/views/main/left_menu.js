@@ -13,7 +13,7 @@ Template.left_menu.helpers({
         }
     },
     notifications: function(){
-        return Notifications.findOne();
+        return Notifications.find({conv_id:{$exists: true}}).count();
     },
     invitations_count: function(){
 //        Notifications.findOne().request;

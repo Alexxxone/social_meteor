@@ -18,11 +18,7 @@ Meteor.publish("one_invite", function(friend_id) {
     return Invites.find({$and:[{receiver: this.userId},{sender: friend_id}]});
 });
 Meteor.publish("notifications", function() {
-    if(!Notifications.findOne({owner: this.userId})){
-        Notifications.insert({owner: this.userId, chat: 0, request: 0});
-    }
-
-    return  Notifications.find({owner: this.userId}); ;
+    return  Notifications.find({receiver: this.userId});
 });
 
 

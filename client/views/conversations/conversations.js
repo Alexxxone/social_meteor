@@ -47,7 +47,15 @@ Template.conversation.rendered = function(){
         $('#conversation_box').slimScroll({height: '700px',start: 'bottom'});
 
     },100);
-
+    Notifications.find().observeChanges({
+        added: function(id, notif) {
+            if(notif.receiver == Meteor.userId() ){
+                if(Router.current().route.name == "conversation" && Router.current().params._id == notif.sender ){
+                    Notifications.remove(id);
+                }
+            }
+        }
+    });
     var smiles = $("#smilesChoose");
     smiles.emotions();
 
