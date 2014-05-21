@@ -28,6 +28,60 @@ body{
     margin-top: 70px;
 }
 
+/* HEADER  */
+.header_player_box{
+    overflow: hidden;
+    transition:.7s;
+    position: absolute;
+    margin-left: 300px;
+    border-top: 1px solid white;
+    margin-top: 20px;
+}
+.header_audio_progress_bar{
+    width: 200px;
+    padding: 15px 0;
+    height: 20px;
+
+}
+.current_playTime{
+    min-width: 30px;
+    margin-left: 5px;
+}
+
+.header_audio_volume_bar{
+    width: 50px;
+    margin: 0 15px;
+    padding: 15px 0;
+}
+.header_audio_songName{
+    color:white;
+    padding-top: 10px;
+    padding-right: 10px;
+    max-width: 208px;
+    min-width: 208px;
+    overflow: hidden;
+}
+
+
+.show_player_box{
+    position: absolute;
+    margin-left: 400px;
+    overflow: hidden;
+    transition:.6s;
+
+}
+
+.flip{
+
+    -webkit-transform: rotatex(-90deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+}
+
+
+
+
+
 .each_friend_in_list {
     min-height: 125px;
     padding: 5px;
@@ -236,6 +290,7 @@ body{
     background-color: #008cba!important;
 }
 .select_song{
+    cursor: default;
    margin: 0;
    padding: 5px 5px;
 }

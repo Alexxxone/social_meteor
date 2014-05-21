@@ -1,6 +1,6 @@
 <template name="header">
     <div class="navbar navbar-default navbar-fixed-top navbar-collapse collapse navbar-inverse-collapse">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <a href="/" class="navbar-brand">Be Social!</a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -31,14 +31,44 @@
                     {{/each}}
                 </div>
             </form>
+
             <div class="navbar-collapse collapse" id="navbar-main">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/help/">Help</a>
-                    </li>
+                    <ul class="nav navbar-nav show_player_box" >
+                        <li><a href="javascript:;" class="show_player">Show Player<i class="fa fa-play fa-fw"></i></a></li>
+                     </ul>
+                    <ul class="nav navbar-nav header_player_box flip" >
+                        <li>
+                            <audio id="audio-player" name="audio-player"  type="audio/mp3"></audio>
+                        </li>
+                        <li class="header_audio_songName">
+                            <span class="songName"></span><span class="current_playTime pull-right"></span>
+                        </li>
+                        <li class="header_audio_progress_bar">
+                            <div class="progress play_progress">
+                                <div  role="progressbar" class="progress-bar bar bar-success"></div>
+                            </div>
+                        </li>
+                        <li class="header_audio_volume_bar">
+                            <div class="volumeSlider"></div>
+                        </li>
+                        <li>
+                            <a class="play-bt" href="#"><i class="fa fa-play fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a class="stop-bt" href="#"><i class="fa fa-stop fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a class="prev-bt" href="#"><i class="fa fa-step-backward fa-fw"></i></a>
+                        </li>
 
-                </ul>
+                        <li>
+                            <a class="next-bt" href="#"><i class="fa fa-step-forward fa-fw"></i></a>
+                        </li>
 
+                        <li>
+                            <a class="hide_player" href="#">X</a>
+                        </li>
+                    </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {{#if currentUser}}
                         <li><a href="javascript:;">{{my_name}}</a></li>
@@ -48,6 +78,9 @@
                         <li><a href="javascript:;">Welcome Guest!</a></li>
                         <li><a href="javascript:;" class="login_link">Login</a></li>
                     {{/if}}
+                    <li>
+                        <a href="/help/">Help</a>
+                    </li>
                 </ul>
 
             </div>
