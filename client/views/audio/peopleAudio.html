@@ -1,24 +1,6 @@
 <template name="peopleAudio">
-    <!--PLAYER AND VOLUME-->
-    <audio id="audio-player" name="audio-player"  type="audio/mp3"></audio>
-    <p><span class="songName"></span><span class="current_playTime pull-right"></span></p>
-    <div class="row">
-        <div class="col-lg-10">
-            <div class="progress play_progress">
-                <div  role="progressbar" class="progress-bar bar bar-success"></div>
-            </div>
-        </div>
-        <div class="col-lg-2">
-            <p class="volume_box">Volume <span class="currentVolume">10</span></p>
-            <div class="volumeSlider"></div>
-        </div>
-    </div>
-    <!-- PLAYER BUTTONS-->
-    <a id="play-bt" href="#"><i class="fa fa-play fa-fw"></i></a> |
-    <a id="stop-bt" href="#"><i class="fa fa-stop fa-fw"></i></a>
+    <input type="text" class="search_song form-control" placeholder="Search">
     <hr>
-
-    <!-- AUDIO FILES-->
     {{#each audio}}
         <p class="select_song" name="{{url store='audio'}}">{{name}}</p>
     {{/each}}

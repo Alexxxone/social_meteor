@@ -3,7 +3,7 @@ Template.wall.rendered = function(){
 };
 Template.wall.helpers({
     currentProfile: function(){
-        return Meteor.users.findOne({ _id: { $ne: Meteor.userId() } }) || Meteor.user();
+        return Meteor.users.findOne({_id: Router.current().params._id});
     },
     on_mind: function(on_mind){
         if(on_mind && on_mind.length){
@@ -25,11 +25,11 @@ Template.wall.helpers({
         }
     },
     avatar: function(){
-        user_id = currentProfile()._id;
+        user_id = Router.current().params._id;
         return ImagesFS.findOne({$and:[{owner: user_id},{avatar: user_id } ]});
     },
     wallImages:function(){
-        return ImagesFS.find({},{limit:3, sort:{uploadedAt: -1}});
+        return ImagesFS.find({owner: Router.current().params._id },{limit:3, sort:{uploadedAt: -1}});
     },
     is_friend:function(){
        if(Friends.findOne()){

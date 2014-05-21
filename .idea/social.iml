@@ -4,8 +4,11 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
     <orderEntry type="module" module-name="bm_v3" />
     <orderEntry type="module" module-name="scott_test" />
+=======
+>>>>>>> 9e53e45058f65097ea20a7fac679cb96bc19f699
   </component>
 </module>
 
